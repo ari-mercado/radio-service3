@@ -1,0 +1,59 @@
+.header {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 1)
+		),
+		url('/images/boat-sunset2.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	// background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 25rem;
+	width: 100%;
+
+	@media all and (max-width: 1313px) {
+		height: 25rem;
+	}
+
+	@media all and (max-width: 800px) {
+		height: 20rem;
+	}
+
+	@media all and (max-width: 600px) {
+		height: 15rem;
+    background-position: center bottom;
+	}
+
+	.headerTitle {
+		color: black;
+		font-family: Oswald, Roboto, Poppins, 'Arial';
+    letter-spacing: 5px;
+		margin-top: 0;
+		font-size: 55px;
+		padding-top: 2rem;
+		color: rgba(0, 0, 0, 0.8);
+		text-shadow: 2px 2px 5px #FFFEE1;
+		margin: 0 5rem;
+
+		@media all and (max-width: 800px) {
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		@media all and (max-width: 600px) {
+			font-size: 45px;
+			font-weight: bolder;
+			padding-top: 1rem;
+		}
+
+		@media all and (max-width: 400px) {
+			font-weight: bolder;
+			padding-top: 1rem;
+      letter-spacing: 3px;
+		}
+	}
+}

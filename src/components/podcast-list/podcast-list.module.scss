@@ -1,0 +1,45 @@
+.wrapper {
+  // padding-top: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+
+  @media all and (max-width: 930px) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .subheading {
+    margin-right: .7rem;
+    margin-block: 1.5rem;
+    text-shadow: 2px 2px 5px #FFFEE1;
+    @media all and (max-width: 930px) {
+      margin-top: 3rem;
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    @media all and (max-width: 800px) {
+      font-size: 20px;
+    }
+
+    @media all and (max-width: 500px) {
+      display: hidden;
+    }
+  }
+  .podcastList {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    @media all and (max-width: 930px) {
+      margin-top: 3rem;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

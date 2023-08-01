@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import styles from './button.module.scss';
 import { AiOutlineDoubleRight } from 'react-icons/ai';

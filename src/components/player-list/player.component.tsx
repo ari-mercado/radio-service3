@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player/lazy';
 import styles from './player-list.module.scss';

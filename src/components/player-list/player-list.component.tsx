@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import AudioPlayer from './player.component';
 import styles from './player-list.module.scss';

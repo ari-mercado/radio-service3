@@ -1,4 +1,3 @@
-import React from 'react';
 import Month from '../month/month.component';
 import styles from './month-list.module.scss';
 

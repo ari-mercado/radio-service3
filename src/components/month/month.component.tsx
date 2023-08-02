@@ -1,7 +1,6 @@
-'use client';
-
 import React from 'react';
 import styles from './month.module.scss';
+import Link from 'next/link';
 
 interface MonthProps {
   month: string;
@@ -11,20 +10,20 @@ interface MonthProps {
   year: string;
 }
 
-const transformData = {
-  enero: '1 - 4',
-  febrero: '5 - 8',
-  marzo: '9 - 13',
-  abril: '14 - 17',
-  mayo: '18 - 21',
-  junio: '22',
-  julio: '23',
-  agosto: '24 - 28',
-  septiembre: '29 - 30',
-  octubre: '31 - 34',
-  noviembre: '35 - 39',
-  diciembre: '40',
-};
+// const transformData = {
+//   enero: '1 - 4',
+//   febrero: '5 - 8',
+//   marzo: '9 - 13',
+//   abril: '14 - 17',
+//   mayo: '18 - 21',
+//   junio: '22',
+//   julio: '23',
+//   agosto: '24 - 28',
+//   septiembre: '29 - 30',
+//   octubre: '31 - 34',
+//   noviembre: '35 - 39',
+//   diciembre: '40',
+// };
 
 const Month = ({
   month,
@@ -37,18 +36,19 @@ const Month = ({
   const shouldDisable = month === 'diciembre' && year === 'sixteen';
   const active = activeMonth === month;
   return (
-    <button
-      onClick={() => {
-        handleMonth(month);
-        handleActiveMonth(month, year);
-      }}
-      className={`
-        ${styles.monthButton} ${active ? styles.activeMonth : ''}
-      `}
-      disabled={shouldDisable}
-    >
-      Eps. {transformData[month]}
-    </button>
+    // <button
+    //   onClick={() => {
+    //     handleMonth(month);
+    //     handleActiveMonth(month, year);
+    //   }}
+    //   className={`
+    //     ${styles.monthButton} ${active ? styles.activeMonth : ''}
+    //   `}
+    //   disabled={shouldDisable}
+    // >
+    //   {month}
+    // </button>
+    <Link href={`${month}`}>{month}</Link>
   );
 };
 

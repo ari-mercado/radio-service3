@@ -1,6 +1,7 @@
 import MonthList from '@/components/month-list/month-list.component';
 import PlayerList from '@/components/player-list/player-list.component';
 import styles from '../page.module.scss';
+import { transformMonthToCollection } from '@/utils/utils';
 
 async function getData() {
   const res = await fetch(process.env.FOURTEEN_DATA_URL);
@@ -10,7 +11,9 @@ async function getData() {
 export async function generateStaticParams() {
   const data = await getData();
   const allMonths = data?.fourteen?.allMonths as string[];
-  return allMonths.map((month) => ({ months: month }));
+  return allMonths.map((month) => ({
+    months: transformMonthToCollection[month],
+  }));
 }
 
 export default async function Page() {

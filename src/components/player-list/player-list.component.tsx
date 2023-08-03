@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import AudioPlayer from './player.component';
 import styles from './player-list.module.scss';
 import { AudioData } from '../../types/types';
+import { transformCollectionToMonth} from '@/utils/utils';
 
 interface PlayerListProps {
   audioData?: AudioData[];
@@ -15,12 +16,12 @@ const PlayerList = () => {
   const [audioData, setAudioData] = useState([]);
   const params = useParams();
   const currentMonth = params.months as string;
-
+  const formattedMonth = transformCollectionToMonth[currentMonth];
   useEffect(() => {
     const fetchAudio = async () => {
       const res = await fetch(process.env.NEXT_PUBLIC_FOURTEEN_DATA_URL);
       const data = await res.json();
-      const { audioData } = data?.fourteen?.monthsData[currentMonth];
+      const { audioData } = data?.fourteen?.monthsData[formattedMonth];
       // const audioDatas = data?.fourteen?.monthsData?.enero?.audioData;
       setAudioData(audioData);
     };

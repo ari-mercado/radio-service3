@@ -4,8 +4,8 @@ import Header from '../components/header/header.component';
 import Footer from '@/components/footer/footer.component';
 
 export const metadata: Metadata = {
-  title: `TypeScript starter for Next.js`,
-  description: `TypeScript starter for Next.js that includes all you need to build amazing apps`,
+  title: `Tu Hora Divina`,
+  description: `Escucha al pastor hablar sobre la vida, la biblia y Jesucristo.`,
 };
 
 export default function RootLayout({

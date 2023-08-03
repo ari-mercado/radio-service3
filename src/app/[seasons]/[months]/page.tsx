@@ -13,46 +13,25 @@ export async function generateStaticParams() {
   return allMonths.map((month) => ({ months: month }));
 }
 
-export default async function Page({ params, children }: any) {
+export default async function Page() {
   const data = await getData();
-  // // FIRST
-  const audioData = data?.fourteen?.monthsData?.enero?.audioData;
   const allMonths = data?.fourteen?.allMonths as string[];
-  const yearTitle = data?.fourteen?.yearTitle as string;
-  const monthTitle = data?.fourteen?.monthsData?.enero?.monthTitle as string;
   const year = (data?.fourteen?.year as string) || 'fourteen';
 
   const firstHalf = allMonths.slice(0, 6);
   const secondHalf =
     year === 'sixteen' || year === 'fourteen' ? allMonths.slice(6) : null;
-  // console.log('params', params);
-  console.log('hello');
-  return (
-    <div className={styles.mainWrapper}>
-      <aside className={styles.monthListWrapper}>
-        {firstHalf.length && (
-          <MonthList
-            allMonths={firstHalf}
-            // handleMonth={handleMonth}
-            year={year}
-            // handleActiveMonth={handleActiveMonth}
-            // activeMonth={activeMonth}
-          />
-        )}
 
-        {secondHalf && (
-          <MonthList
-            allMonths={secondHalf}
-            // handleMonth={handleMonth}
-            year={year}
-            // handleActiveMonth={handleActiveMonth}
-            // activeMonth={activeMonth}
-          />
-        )}
+  return (
+    <>
+      <aside className={styles.monthListWrapper}>
+        {firstHalf.length && <MonthList allMonths={firstHalf} year={year} />}
+
+        {secondHalf.length && <MonthList allMonths={secondHalf} year={year} />}
       </aside>
       <section className={styles.playerListWrapper}>
         <PlayerList />
       </section>
-    </div>
+    </>
   );
 }

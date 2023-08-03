@@ -1,3 +1,5 @@
+//!!! This Component is no longer used since App router migration. It is just here for reference and it will be removed in the future.
+
 import React, { useState, useEffect } from 'react';
 import MonthList from '../month-list/month-list.component';
 import PlayerList from '../player-list/player-list.component';

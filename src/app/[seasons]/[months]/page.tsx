@@ -28,9 +28,9 @@ export default async function Page() {
   return (
     <>
       <aside className={styles.monthListWrapper}>
-        {firstHalf.length && <MonthList allMonths={firstHalf} year={year} />}
+        {firstHalf.length && <MonthList allMonths={firstHalf} />}
 
-        {secondHalf.length && <MonthList allMonths={secondHalf} year={year} />}
+        {secondHalf.length && <MonthList allMonths={secondHalf} />}
       </aside>
       <section className={styles.playerListWrapper}>
         <PlayerList />

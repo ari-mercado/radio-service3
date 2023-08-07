@@ -5,29 +5,25 @@ import { useParams } from 'next/navigation';
 import AudioPlayer from './player.component';
 import styles from './player-list.module.scss';
 import { AudioData } from '../../types/types';
-import { transformCollectionToMonth} from '@/utils/utils';
-
-interface PlayerListProps {
-  audioData?: AudioData[];
-}
+import { transformCollectionToMonth } from '@/utils/utils';
 
 const PlayerList = () => {
-  const [isActive, setIsActive] = React.useState('');
-  const [audioData, setAudioData] = useState([]);
+  const [isActive, setIsActive] = useState('');
+  const [audioData, setAudioData] = useState<AudioData[]>([]);
   const params = useParams();
-  const currentMonth = params.months as string;
-  const formattedMonth = transformCollectionToMonth[currentMonth];
+
   useEffect(() => {
     const fetchAudio = async () => {
       const res = await fetch(process.env.NEXT_PUBLIC_FOURTEEN_DATA_URL);
       const data = await res.json();
+      const currentMonth = params.months as string;
+      const formattedMonth = transformCollectionToMonth[currentMonth];
       const { audioData } = data?.fourteen?.monthsData[formattedMonth];
-      // const audioDatas = data?.fourteen?.monthsData?.enero?.audioData;
       setAudioData(audioData);
     };
 
     fetchAudio();
-  }, [currentMonth]);
+  }, [params.months]);
 
   const handleSetActive = (activePlayer: string) => {
     setIsActive(activePlayer);

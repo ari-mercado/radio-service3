@@ -19,7 +19,7 @@ const useIsDesktop = (): boolean => {
   return isDesktop;
 };
 
-const NavBar = ({ handleYear }: { handleYear: (year: string) => unknown }) => {
+const NavBar = () => {
   const [active, setActive] = useState<string>('fourteen');
   const isDesktop = useIsDesktop();
 
@@ -28,7 +28,6 @@ const NavBar = ({ handleYear }: { handleYear: (year: string) => unknown }) => {
       <ul>
         <li
           onClick={() => {
-            handleYear('fourteen');
             setActive('fourteen');
           }}
           className={`
@@ -40,7 +39,6 @@ const NavBar = ({ handleYear }: { handleYear: (year: string) => unknown }) => {
 
         <li
           onClick={() => {
-            handleYear('fifteen');
             setActive('fifteen');
           }}
           className={`

@@ -18,7 +18,6 @@ const Month = ({ month }: MonthProps) => {
   // const shouldDisable = month === 'diciembre' && year === 'sixteen';
   const params = useParams();
   const isActive = transformMonthToCollection[month] === params.months;
-  console.log('params', params);
   return (
     <Link
       href={`${transformMonthToCollection[month]}`}

@@ -16,7 +16,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Page() {
+export default async function Page({ params }: any) {
   const data = await getData();
   const allMonths = data?.fourteen?.allMonths as string[];
   const year = (data?.fourteen?.year as string) || 'fourteen';
@@ -25,6 +25,7 @@ export default async function Page() {
   const secondHalf =
     year === 'sixteen' || year === 'fourteen' ? allMonths.slice(6) : null;
 
+  console.log('params', params);
   return (
     <>
       <aside className={styles.monthListWrapper}>
@@ -33,7 +34,7 @@ export default async function Page() {
         {secondHalf.length && <MonthList allMonths={secondHalf} />}
       </aside>
       <section className={styles.playerListWrapper}>
-        <PlayerList />
+        <PlayerList month={params.months} />
       </section>
     </>
   );

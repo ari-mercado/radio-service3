@@ -2,7 +2,7 @@ import styles from './page.module.scss';
 
 export async function generateStaticParams() {
   // In the data from API, these 'seasons' are labeled as years
-  const seasonsData = ['temporada-1', 'temporada-2', 'temporada-3'];
+  const seasonsData = ['temporada-1'];
   return seasonsData.map((season) => ({
     seasons: season,
   }));

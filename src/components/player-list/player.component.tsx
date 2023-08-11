@@ -1,36 +1,43 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { Suspense } from 'react';
 import ReactPlayer from 'react-player/lazy';
 import styles from './player-list.module.scss';
 import Button from '../button/button.component';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 interface AudioPlayerProps {
   audioFile: string;
-  isActive: string;
-  handleSetActive: (player: string) => any;
   audioTitle: string;
 }
 
-const AudioPlayer = ({
-  audioFile,
-  audioTitle,
-  isActive,
-  handleSetActive,
-}: AudioPlayerProps) => {
-  const [loading, setLoading] = useState(true);
+const getEpisodeNumber = (audioTitle: string): string => {
+  return audioTitle
+    .split('')
+    .filter((el) => Number(el) || el == '0')
+    .join('');
+};
 
-  React.useEffect(() => {
-    setLoading(false);
-  }, [loading]);
+const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
+  const router = useRouter();
+  const episodeNumber = getEpisodeNumber(audioTitle);
+  const searchParams = useSearchParams();
 
-  if (isActive !== audioTitle) {
-    return <Button audioTitle={audioTitle} handleSetActive={handleSetActive} />;
+  const createQueryString = () => {
+    const params = new URLSearchParams();
+    params.set('Ep', episodeNumber);
+    router.push(`?${params.toString()}`);
+  };
+
+  if (episodeNumber !== searchParams.get('Ep')) {
+    return (
+      <Button audioTitle={audioTitle} handleSetActive={createQueryString} />
+    );
   }
 
   return (
     <div className={styles.playerWrapper}>
-      {!loading ? (
+      <Suspense fallback={<div className={styles.spinner} />}>
         <ReactPlayer
           url={audioFile}
           className={styles.audioPlayer}
@@ -38,9 +45,7 @@ const AudioPlayer = ({
           height={120}
           width="100%"
         />
-      ) : (
-        <div className={styles.spinner} />
-      )}
+      </Suspense>
     </div>
   );
 };

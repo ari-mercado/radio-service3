@@ -3,13 +3,14 @@ import styles from './month-list.module.scss';
 
 interface MonthListProps {
   allMonths: string[];
+  currentMonth: string;
 }
 
-const MonthList = ({ allMonths }: MonthListProps) => {
+const MonthList = ({ allMonths, currentMonth }: MonthListProps) => {
   return (
     <div className={styles.monthsWrapper}>
       {allMonths.map((month) => (
-        <Month month={month} key={month} />
+        <Month month={month} key={month} currentMonth={currentMonth} />
       ))}
     </div>
   );

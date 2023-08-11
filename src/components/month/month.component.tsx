@@ -1,9 +1,9 @@
-'use client';
+// 'use client';
 
 import React from 'react';
 import styles from './month.module.scss';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+
 import {
   transformMonthToCollectionWithSpace,
   transformMonthToCollection,
@@ -11,13 +11,14 @@ import {
 
 interface MonthProps {
   month: string;
+  currentMonth: string;
 }
 
-const Month = ({ month }: MonthProps) => {
+const Month = ({ month, currentMonth }: MonthProps) => {
   // disabled because there actually isn't data available and it created an error
   // const shouldDisable = month === 'diciembre' && year === 'sixteen';
-  const params = useParams();
-  const isActive = transformMonthToCollection[month] === params.months;
+  // const params = useParams();
+  const isActive = transformMonthToCollection[month] === currentMonth;
   return (
     <Link
       href={`${transformMonthToCollection[month]}`}

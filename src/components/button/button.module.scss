@@ -8,14 +8,15 @@
 	padding: .5rem 2rem;
 	margin: .7rem 0.5rem;
 	min-width: 95%;
-	color: var(--color-primary);
+	color: black;
 	font-weight: 600;
 	cursor: pointer;
 	border-radius: 7px;
-	background-color: var(--color-primary);
+	background-color: transparent;
 	color: #fff;
-  border-top: 3px solid;
-  border-top-color: var(--color-orange);
+  border: 2px solid var(--color-primary);
+	border-top-width: 2px;
+  border-top-color: var(--color-primary);
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -23,13 +24,21 @@
   align-items: center;
 	&:hover {
 		font-weight: bolder;
+		background-color: lightgrey;
 	}
 
   .icon {
     margin-left: 2rem;
+		color: var(--color-orange);
   }
 
   @media all and (max-width: 600px) {
     width: 90%;
   }
+}
+
+.buttonText {
+	color: var(--color-primary);
+	font-size: 18px;
+	font-weight: lighter;
 }

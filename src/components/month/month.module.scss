@@ -6,6 +6,9 @@
 	padding: 0.3rem 2.5rem;
 	min-width: 3rem;
 	color: var(--color-primary);
+	border: 2px solid var(--color-green-dark);
+	border-top-width: 2px;
+  border-top-color: var(--color-green-dark);
 	font-weight: 500;
 	cursor: pointer;
 	border-radius: 7px;

@@ -25,7 +25,6 @@ export default async function Page({ params }: any) {
   const secondHalf =
     year === 'sixteen' || year === 'fourteen' ? allMonths.slice(6) : null;
 
-  console.log('params', params);
   return (
     <>
       <aside className={styles.monthListWrapper}>
@@ -38,6 +37,7 @@ export default async function Page({ params }: any) {
         )}
       </aside>
       <section className={styles.playerListWrapper}>
+        {/* @ts-expect-error Server Component */}
         <PlayerList month={params.months} />
       </section>
     </>

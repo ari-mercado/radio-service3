@@ -1,7 +1,7 @@
 'use client';
 import styles from './player-list.module.scss';
 // import ReactPlayer from 'react-player/lazy';
-import { Suspense, lazy } from 'React';
+import { Suspense, lazy } from 'react';
 const ReactPlayer = lazy(() => import('react-player'));
 import Button from '../button/button.component';
 import { useRouter, useSearchParams } from 'next/navigation';

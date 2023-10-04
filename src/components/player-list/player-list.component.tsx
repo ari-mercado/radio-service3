@@ -2,8 +2,11 @@
 
 // import React, { useState, useEffect } from 'react';
 // import { useParams } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import styles from './player-list.module.scss';
-import AudioPlayer from '../player/player.component';
+const AudioPlayer = dynamic(() => import('../player/player.component'), {
+  ssr: false,
+});
 // import { AudioData } from '../../types/types';
 import { transformCollectionToMonth } from '@/utils/utils';
 

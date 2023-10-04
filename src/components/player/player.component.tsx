@@ -1,12 +1,8 @@
 'use client';
-
-import dynamic from 'next/dynamic';
 import styles from './player-list.module.scss';
 // import ReactPlayer from 'react-player/lazy';
-const ReactPlayer = dynamic(() => import('react-player/lazy'), {
-  loading: () => <div className={styles.spinner} />,
-  ssr: false,
-});
+import { Suspense, lazy } from 'React';
+const ReactPlayer = lazy(() => import('react-player'));
 import Button from '../button/button.component';
 import { useRouter, useSearchParams } from 'next/navigation';
 
@@ -42,13 +38,15 @@ const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
   return (
     <div className={styles.playerWrapper}>
       <h3 className={styles.episodeTitle}>Ep. {episodeNumber}</h3>
-      <ReactPlayer
-        url={audioFile}
-        className={styles.audioPlayer}
-        controls
-        height={120}
-        width="100%"
-      />
+      <Suspense fallback={<div className={styles.spinner} />}>
+        <ReactPlayer
+          url={audioFile}
+          className={styles.audioPlayer}
+          controls
+          height={120}
+          width="100%"
+        />
+      </Suspense>
     </div>
   );
 };

@@ -36,7 +36,7 @@
 		letter-spacing: 3px;
 		margin-bottom: 0.3rem;
     padding-bottom: 0.5rem;
-		color: var(--color-green-dark);
+		// color: var(--color-green-dark);
 
 		@media all and (max-width: 1200px) {
 			margin-top: 0.2rem;
@@ -61,6 +61,17 @@
 			letter-spacing: 0;
 		}
 	}
+}
+
+.episodeTitle {
+	color: var(--color-primary);
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-align: center;
+	padding-bottom: .2rem;
+	color: var(--color-orange);
+	border-left: 3px solid var(--color-orange);
 }
 
 .spinner {

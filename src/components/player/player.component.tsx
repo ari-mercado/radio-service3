@@ -41,6 +41,7 @@ const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
 
   return (
     <div className={styles.playerWrapper}>
+      <h3 className={styles.episodeTitle}>Ep. {episodeNumber}</h3>
       <ReactPlayer
         url={audioFile}
         className={styles.audioPlayer}

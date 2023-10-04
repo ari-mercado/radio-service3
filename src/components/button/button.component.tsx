@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './button.module.scss';
-import { AiOutlineDoubleRight } from 'react-icons/ai';
+import { FaAngleDown } from 'react-icons/fa6';
 
 interface ButtonProps {
   handleSetActive: () => any;
@@ -13,7 +13,7 @@ const Button = ({ handleSetActive, audioTitle }: ButtonProps) => {
   return (
     <button className={styles.button} onClick={() => handleSetActive()}>
       <span className={styles.buttonText}>{audioTitle}</span>
-      <AiOutlineDoubleRight className={styles.icon} />
+      <FaAngleDown className={styles.icon} />
     </button>
   );
 };

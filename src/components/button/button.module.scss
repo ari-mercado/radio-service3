@@ -1,5 +1,4 @@
 .button {
-  display: block;
 	transition-duration: 0.4s;
 	text-transform: capitalize;
 	letter-spacing: 3px;
@@ -18,9 +17,10 @@
 	border-top-width: 2px;
   border-top-color: var(--color-primary);
   width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
   align-items: center;
 	&:hover {
 		font-weight: bolder;
@@ -28,8 +28,8 @@
 	}
 
   .icon {
-    margin-left: 2rem;
 		color: var(--color-orange);
+		justify-self: self-end;
   }
 
   @media all and (max-width: 600px) {
@@ -38,6 +38,7 @@
 }
 
 .buttonText {
+	grid-column-start: 2;
 	color: var(--color-primary);
 	font-size: 18px;
 	font-weight: lighter;

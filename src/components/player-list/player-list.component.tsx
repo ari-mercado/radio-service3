@@ -2,8 +2,8 @@
 
 // import React, { useState, useEffect } from 'react';
 // import { useParams } from 'next/navigation';
-import AudioPlayer from '../player/player.component';
 import styles from './player-list.module.scss';
+import AudioPlayer from '../player/player.component';
 // import { AudioData } from '../../types/types';
 import { transformCollectionToMonth } from '@/utils/utils';
 

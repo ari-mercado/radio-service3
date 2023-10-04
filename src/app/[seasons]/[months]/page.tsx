@@ -1,6 +1,12 @@
-import MonthList from '@/components/month-list/month-list.component';
-import PlayerList from '@/components/player-list/player-list.component';
+import dynamic from 'next/dynamic';
 import styles from '../page.module.scss';
+import MonthList from '@/components/month-list/month-list.component';
+const PlayerList = dynamic(
+  () => import('@/components/player-list/player-list.component' as string),
+  {
+    loading: () => <div className={styles.spinner} />,
+  },
+);
 import { transformMonthToCollection } from '@/utils/utils';
 
 async function getData() {

@@ -1,15 +1,24 @@
-.monthButton {
+.link {
 	transition-duration: 0.4s;
 	text-transform: capitalize;
-	border: 1px solid white;
+	border: 1px solid black;
 	font-size: 18px;
 	padding: 0.3rem 2.5rem;
-	min-width: 10rem;
+	min-width: 3rem;
 	color: var(--color-primary);
+	border: 2px solid var(--color-green-dark);
+	border-top-width: 2px;
+  border-top-color: var(--color-green-dark);
 	font-weight: 500;
 	cursor: pointer;
 	border-radius: 7px;
+	text-align: center;
 	// background-color: #FFFAFA;
+
+	a {
+		padding: 0;
+		margin: 0;
+	}
 
 	&:hover {
 		font-weight: bolder;
@@ -25,8 +34,9 @@
 	}
 
 	@media all and (max-width: 500px) {
-		font-size: 18px;
+		font-size: 15px;
 		letter-spacing: 2px;
+		padding-inline: 1rem;
 	}
 }
 
@@ -34,6 +44,4 @@
 	// background-color: rgba(0,0,0,.5);
 	background-color: var(--color-primary);
 	color: #fff;
-  border-top: 3px solid;
-  border-top-color: var(--color-orange);
 }

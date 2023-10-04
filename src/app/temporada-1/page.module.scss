@@ -1,0 +1,72 @@
+.mainWrapper {
+	display: flex;
+	min-height: 30rem;
+	width: 100%;
+	gap: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  gap: 0;
+  margin-left: 2.5rem;
+  margin-top: 4rem;;
+
+  .playerListWrapper {
+    flex-grow: 3;
+    margin-inline: 5rem;
+
+    @media all and (max-width: 930px) {
+      padding-inline: 0;
+      margin-top: 4rem;
+	  }
+  }
+
+  .monthListWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 1rem;
+  }
+
+	@media all and (max-width: 930px) {
+		width: 100%;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 9rem;
+	}
+
+	@media all and (max-width: 500px) {
+		margin-top: 0rem;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+
+.spinner {
+	display: block;
+	/* position: absolute; */
+	padding: 20px;
+	margin-right: 5rem;
+	width: 20px;
+	border: 3px solid rgba(195, 195, 195, 0.6);
+	border-radius: 50%;
+	border-top-color: #636767;
+	animation: spin 0.8s ease-in-out infinite;
+	-webkit-animation: spin 0.8s ease-in-out infinite;
+	@keyframes spin {
+		to {
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes spin {
+		to {
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@media all and (max-width: 800px) {
+		display: inline-block;
+	}
+}
+

@@ -1,19 +1,42 @@
-import React from 'react';
-import AudioPlayer from './player.component';
+// 'use client';
+
+// import React, { useState, useEffect } from 'react';
+// import { useParams } from 'next/navigation';
 import styles from './player-list.module.scss';
-import { AudioData } from '../../types/types';
+import AudioPlayer from '../player/player.component';
+// import { AudioData } from '../../types/types';
+import { transformCollectionToMonth } from '@/utils/utils';
 
-interface PlayerListProps {
-  audioData: AudioData[];
-}
+const getAudioData = async (currentMonth) => {
+  const res = await fetch(process.env.NEXT_PUBLIC_FOURTEEN_DATA_URL);
+  const data = await res.json();
+  const formattedMonth = transformCollectionToMonth[currentMonth];
+  const { audioData } = data?.fourteen?.monthsData[formattedMonth];
+  return audioData;
+};
 
-const PlayerList = ({ audioData }: PlayerListProps) => {
-  const firstPlayer = audioData && audioData[0]?.audioTitle;
-  const [isActive, setIsActive] = React.useState(firstPlayer || '');
+const PlayerList = async ({ month }: { month: string }) => {
+  // const [isActive, setIsActive] = useState('');
+  // const [audioData, setAudioData] = useState<AudioData[]>([]);
+  // const params = useParams();
+  const audioData = await getAudioData(month);
 
-  const handleSetActive = (activePlayer: string) => {
-    setIsActive(activePlayer);
-  };
+  // useEffect(() => {
+  //   const fetchAudio = async () => {
+  //     const res = await fetch(process.env.NEXT_PUBLIC_FOURTEEN_DATA_URL);
+  //     const data = await res.json();
+  //     const currentMonth = params.months as string;
+  //     const formattedMonth = transformCollectionToMonth[currentMonth];
+  //     const { audioData } = data?.fourteen?.monthsData[formattedMonth];
+  //     setAudioData(audioData);
+  //   };
+
+  //   fetchAudio();
+  // }, [params.months]);
+
+  // const handleSetActive = (activePlayer: string) => {
+  //   setIsActive(activePlayer);
+  // };
 
   return (
     <div className={styles.playerWrapper}>
@@ -22,8 +45,6 @@ const PlayerList = ({ audioData }: PlayerListProps) => {
           {/* <h2 className={styles.audioTitle}>{audio.audioTitle}</h2> */}
           <AudioPlayer
             audioFile={audio.audioFile}
-            isActive={isActive}
-            handleSetActive={handleSetActive}
             audioTitle={audio.audioTitle}
           />
         </article>

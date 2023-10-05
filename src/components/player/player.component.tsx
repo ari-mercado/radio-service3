@@ -2,7 +2,7 @@
 import styles from './player.module.scss';
 // import ReactPlayer from 'react-player/lazy';
 import { Suspense, lazy } from 'react';
-const ReactPlayer = lazy(() => import('react-player'));
+const ReactPlayer = lazy(() => import('react-player/soundcloud'));
 import Button from '../button/button.component';
 import { useRouter, useSearchParams } from 'next/navigation';
 
@@ -45,6 +45,17 @@ const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
           controls
           height={120}
           width="100%"
+          config={{
+            soundcloud: {
+              options: {
+                show_artwork: false,
+                download: false,
+                show_user: false,
+                auto_play: false,
+                color: '#0066CC',
+              },
+            },
+          }}
         />
       </Suspense>
     </div>

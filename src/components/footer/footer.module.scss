@@ -1,12 +1,11 @@
 .footer {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	height: 5rem;
 	color: gray;
 	font-size: 11px;
   margin-top: 7rem;
-	font-family: var(--font-lobster), 'Arial';
 	font-weight: lighter;
 
 	@media all and (max-width: 1313px) {

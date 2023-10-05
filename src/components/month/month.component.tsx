@@ -1,5 +1,3 @@
-// 'use client';
-
 import React from 'react';
 import styles from './month.module.scss';
 import Link from 'next/link';

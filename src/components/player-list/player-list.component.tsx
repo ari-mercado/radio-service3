@@ -11,7 +11,7 @@ const AudioPlayer = dynamic(() => import('../player/player.component'), {
 import { transformCollectionToMonth } from '@/utils/utils';
 
 const getAudioData = async (currentMonth) => {
-  const res = await fetch(process.env.NEXT_PUBLIC_FOURTEEN_DATA_URL);
+  const res = await fetch(process.env.FOURTEEN_DATA_URL);
   const data = await res.json();
   const formattedMonth = transformCollectionToMonth[currentMonth];
   const { audioData } = data?.fourteen?.monthsData[formattedMonth];

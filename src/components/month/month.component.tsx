@@ -7,6 +7,7 @@ import Link from 'next/link';
 import {
   transformMonthToCollectionWithSpace,
   transformMonthToCollection,
+  firstEpisodeInMonth,
 } from '@/utils/utils';
 
 interface MonthProps {
@@ -21,7 +22,7 @@ const Month = ({ month, currentMonth }: MonthProps) => {
   const isActive = transformMonthToCollection[month] === currentMonth;
   return (
     <Link
-      href={`${transformMonthToCollection[month]}`}
+      href={`${transformMonthToCollection[month]}?Ep=${firstEpisodeInMonth[month]}`}
       className={`
       ${styles.link} ${isActive ? styles.activeMonth : ''}
     `}

@@ -42,3 +42,18 @@ export const transformCollectionToMonth = {
   '35-39': 'noviembre',
   '40': 'diciembre',
 };
+
+export const firstEpisodeInMonth = {
+  enero: '1',
+  febrero: '5',
+  marzo: '9',
+  abril: '14',
+  mayo: '18',
+  junio: '22',
+  julio: '23',
+  agosto: '24',
+  septiembre: '29',
+  octubre: '31',
+  noviembre: '35',
+  diciembre: '40',
+};

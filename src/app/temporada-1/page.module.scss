@@ -8,24 +8,35 @@
   height: auto;
   flex-direction: row;
   gap: 0;
-  margin-left: 2.5rem;
-  margin-top: 4rem;;
+  margin-inline: 3.5rem;
+  margin-top: 4rem;
 
   .playerListWrapper {
-    flex-grow: 3;
+    flex-grow: 2;
     margin-inline: 5rem;
+		width: 90%;
+		margin: 0 auto;
+		margin-inline: 8rem;
+		display: flex;
+
+		@media all and (max-width: 1200px) {
+			margin-inline: 5rem;
+	  }
 
     @media all and (max-width: 930px) {
       padding-inline: 0;
       margin-top: 4rem;
+			margin-inline: 0;
+			margin: 3rem auto;
 	  }
   }
 
   .monthListWrapper {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
-    padding-left: 1rem;
+    flex-grow: 2;
+		gap: 2rem;
+    padding-left: 0;
   }
 
 	@media all and (max-width: 930px) {
@@ -34,7 +45,7 @@
 		flex-wrap: wrap;
     flex-direction: column;
     margin-left: 0;
-    margin-top: 9rem;
+    // margin-top: 9rem;
 	}
 
 	@media all and (max-width: 500px) {

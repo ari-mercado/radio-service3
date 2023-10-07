@@ -1,0 +1,532 @@
+{
+  "type": "object",
+  "required": [
+    "fourteen"
+  ],
+  "properties": {
+    "fourteen": {
+      "type": "object",
+      "required": [
+        "yearTitle",
+        "year",
+        "allMonths",
+        "monthsData"
+      ],
+      "properties": {
+        "yearTitle": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "allMonths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "monthsData": {
+          "type": "object",
+          "required": [
+            "enero",
+            "febrero",
+            "marzo",
+            "abril",
+            "mayo",
+            "junio",
+            "julio",
+            "agosto",
+            "septiembre",
+            "octubre",
+            "noviembre",
+            "diciembre"
+          ],
+          "properties": {
+            "enero": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "febrero": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "marzo": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "abril": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "mayo": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "junio": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "julio": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "agosto": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "septiembre": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "octubre": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "noviembre": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "diciembre": {
+              "type": "object",
+              "required": [
+                "monthTitle",
+                "audioData"
+              ],
+              "properties": {
+                "monthTitle": {
+                  "type": "string"
+                },
+                "audioData": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "audioTitle",
+                      "audioFile",
+                      "date",
+                      "episodeNumber"
+                    ],
+                    "properties": {
+                      "audioTitle": {
+                        "type": "string"
+                      },
+                      "audioFile": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "episodeNumber": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

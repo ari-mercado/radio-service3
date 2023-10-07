@@ -1,8 +1,8 @@
 'use client';
-import styles from './player.module.scss';
-// import ReactPlayer from 'react-player/lazy';
 import { Suspense, lazy } from 'react';
-const ReactPlayer = lazy(() => import('react-player/soundcloud'));
+const AudioPlayer = lazy(() => import('react-h5-audio-player'));
+import './player-overwrite.scss';
+import styles from './player.module.scss';
 import Button from '../button/button.component';
 import { useRouter, useSearchParams } from 'next/navigation';
 
@@ -18,7 +18,7 @@ const getEpisodeNumber = (audioTitle: string): string => {
     .join('');
 };
 
-const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
+const AudioPlayerC = ({ audioFile, audioTitle }: AudioPlayerProps) => {
   const router = useRouter();
   const episodeNumber = getEpisodeNumber(audioTitle);
   const searchParams = useSearchParams();
@@ -36,30 +36,15 @@ const AudioPlayer = ({ audioFile, audioTitle }: AudioPlayerProps) => {
   }
 
   return (
-    <div className={styles.playerWrapper}>
-      <h3 className={styles.episodeTitle}>Ep. {episodeNumber}</h3>
+    <div className={styles.wrapper}>
+      <h2 className={styles.episodeTitle}>
+        <strong>Ep. {episodeNumber}</strong>
+      </h2>
       <Suspense fallback={<div className={styles.spinner} />}>
-        <ReactPlayer
-          url={audioFile}
-          className={styles.audioPlayer}
-          controls
-          height={120}
-          width="100%"
-          config={{
-            soundcloud: {
-              options: {
-                show_artwork: false,
-                download: false,
-                show_user: false,
-                auto_play: false,
-                color: '#0066CC',
-              },
-            },
-          }}
-        />
+        <AudioPlayer src={audioFile} className={styles.audioPlayer} />
       </Suspense>
     </div>
   );
 };
 
-export default AudioPlayer;
+export default AudioPlayerC;

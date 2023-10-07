@@ -6,8 +6,9 @@
   flex-direction: column;
   width: 100%;
 	border-radius: 7px;
+	padding-block: 1rem;
   .playerArticle:not(:first-child) {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
 	@media all and (max-width: 1313px) {
@@ -35,8 +36,8 @@
 		font-size: 1.2rem;
 		font-weight: 600;
 		letter-spacing: 3px;
-		margin-bottom: 0.3rem;
-    padding-bottom: 0.5rem;
+		// margin-bottom: 1rem;
+    padding-bottom: 1rem;
 		color: var(--color-green-dark);
 
 		@media all and (max-width: 1200px) {

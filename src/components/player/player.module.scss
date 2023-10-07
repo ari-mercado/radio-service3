@@ -1,6 +1,36 @@
 .audioPlayer {
 	margin: 0 auto;
 	width: 100%;
+	animation: fadeIn 0.8s;
+	-webkit-animation: fadeIn 0.8s;
+	-moz-animation: fadeIn 0.8s;
+	-o-animation: fadeIn 0.8s;
+	-ms-animation: fadeIn 0.8s;
+	
+	@keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@-moz-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@-webkit-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@-o-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	@-ms-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
 }
 
 .episodeTitle {
@@ -20,7 +50,7 @@
 	width: 20px;
 	border: 3px solid rgba(195, 195, 195, 0.6);
 	border-radius: 50%;
-	border-top-color: #636767;
+	border-top-color: var(--color-flat-green);
 	animation: spin 0.8s ease-in-out infinite;
 	-webkit-animation: spin 0.8s ease-in-out infinite;
 	@keyframes spin {

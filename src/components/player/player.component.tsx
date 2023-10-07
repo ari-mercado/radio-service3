@@ -41,7 +41,7 @@ const AudioPlayerC = ({ audioFile, audioTitle }: AudioPlayerProps) => {
         <strong>Ep. {episodeNumber}</strong>
       </h2>
       <Suspense fallback={<div className={styles.spinner} />}>
-        <AudioPlayer src={audioFile} />
+        <AudioPlayer src={audioFile} className={styles.audioPlayer} />
       </Suspense>
     </div>
   );

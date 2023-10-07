@@ -5,12 +5,12 @@
 
 .episodeTitle {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: bolder;
 	letter-spacing: 3px;
 	text-align: center;
-	padding-bottom: .2rem;
-	color: black;
-	padding-block: .3rem;
+	padding-bottom: 1rem;
+	color: var(--color-green-dark);
+	// padding-block: rem;
 }
 
 .spinner {

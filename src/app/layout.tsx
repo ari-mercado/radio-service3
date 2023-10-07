@@ -1,12 +1,13 @@
 import { Metadata } from 'next';
 import './globals.css';
+import styles from './layout.module.scss';
 import Header from '../components/header/header.component';
 import Footer from '@/components/footer/footer.component';
 import { Poppins, Lobster } from 'next/font/google';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: '300',
+  weight: ['300', '400', '500', '600', '700'],
   style: 'normal',
   variable: '--font-poppins',
 });
@@ -48,7 +49,8 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
       </head>
-      <body>
+      <body className={styles.main}>
+        <div className={styles.bgImage} />
         <Header />
         {children}
         <Footer />

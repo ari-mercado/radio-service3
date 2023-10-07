@@ -1,6 +1,6 @@
 .monthsWrapper {
 	display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 	height: 100%;
 	min-width: 11rem;
 	margin: 0 4.5rem;
@@ -16,14 +16,13 @@
 	@media all and (max-width: 930px) {
 		flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0 auto;
-    // min-width: 10rem;
 	}
 
   @media all and (max-width: 500px) {
     margin-left: 0;
     min-width: 8rem;
-    margin: 5rem auto;
+    margin: 2em auto 0 auto;
 	}
 }

@@ -37,7 +37,9 @@ const AudioPlayerC = ({ audioFile, audioTitle }: AudioPlayerProps) => {
 
   return (
     <div className={styles.wrapper}>
-      <h3 className={styles.episodeTitle}>Ep. {episodeNumber}</h3>
+      <h2 className={styles.episodeTitle}>
+        <strong>Ep. {episodeNumber}</strong>
+      </h2>
       <Suspense fallback={<div className={styles.spinner} />}>
         <AudioPlayer src={audioFile} />
       </Suspense>

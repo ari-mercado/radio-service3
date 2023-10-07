@@ -1,41 +1,6 @@
 .audioPlayer {
 	margin: 0 auto;
-	// padding: 0 0.3rem;
 	width: 100%;
-}
-
-.audioTitle {
-	color: black;
-	text-align: center;
-	font-size: 1.2rem;
-	font-weight: 600;
-	letter-spacing: 3px;
-	margin-bottom: 0.3rem;
-	padding-bottom: 0.5rem;
-	// color: var(--color-green-dark);
-
-	@media all and (max-width: 1200px) {
-		margin-top: 0.2rem;
-		margin-bottom: .5rem;
-		padding-bottom: 0.3rem;
-		letter-spacing: 2px;
-		font-size: 1.2rem;
-
-		&:first-child {
-			padding-top: -0.3rem;
-		}
-	}
-	@media all and (max-width: 800px) {
-		margin-top: 0.3rem;
-		margin-bottom: 0.2rem;
-		padding-bottom: 0.2rem;
-		letter-spacing: 3px;
-	}
-	@media all and (max-width: 600px) {
-		margin-top: 0.4rem;
-		padding-top: 0.4rem;
-		letter-spacing: 0;
-	}
 }
 
 .episodeTitle {
@@ -50,7 +15,7 @@
 
 .spinner {
 	display: block;
-	padding: 62px;
+	padding: 2rem;
 	margin-right: 5rem;
 	width: 20px;
 	border: 3px solid rgba(195, 195, 195, 0.6);

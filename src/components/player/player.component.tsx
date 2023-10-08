@@ -26,7 +26,9 @@ const AudioPlayerC = ({ audioFile, audioTitle }: AudioPlayerProps) => {
   const createQueryString = () => {
     const params = new URLSearchParams();
     params.set('Ep', episodeNumber);
-    router.push(`?${params.toString()}`);
+    router.push(`?${params.toString()}`, {
+      scroll: false,
+    });
   };
 
   if (episodeNumber !== searchParams.get('Ep')) {

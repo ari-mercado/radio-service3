@@ -21,6 +21,7 @@ const Month = ({ month, currentMonth }: MonthProps) => {
   return (
     <Link
       href={`${transformMonthToCollection[month]}?Ep=${firstEpisodeInMonth[month]}`}
+      scroll={false}
       className={`
       ${styles.link} ${isActive ? styles.activeMonth : ''}
     `}

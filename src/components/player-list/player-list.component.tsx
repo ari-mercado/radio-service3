@@ -25,6 +25,7 @@ const PlayerList = async ({ month }: { month: string }) => {
           <AudioPlayer
             audioFile={audio.audioFile}
             audioTitle={audio.audioTitle}
+            episodeNumber={audio.episodeNumber}
           />
         </article>
       ))}

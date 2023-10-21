@@ -7,14 +7,25 @@ import { AiOutlineCaretDown } from 'react-icons/ai';
 interface ButtonProps {
   handleSetActive: () => any;
   audioTitle: string;
+  episodeNumber: number;
 }
 
-const Button = ({ handleSetActive, audioTitle }: ButtonProps) => {
+const Button = ({
+  handleSetActive,
+  audioTitle,
+  episodeNumber,
+}: ButtonProps) => {
   return (
-    <button className={styles.button} onClick={() => handleSetActive()}>
-      <span className={styles.buttonText}>{audioTitle}</span>
+    <div
+      className={styles.button}
+      onClick={() => handleSetActive()}
+      role="button"
+    >
+      <h2 className={styles.buttonText}>
+        ({episodeNumber}) {audioTitle}
+      </h2>
       <AiOutlineCaretDown className={styles.icon} />
-    </button>
+    </div>
   );
 };
 

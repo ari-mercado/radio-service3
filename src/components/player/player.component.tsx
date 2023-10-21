@@ -9,38 +9,49 @@ import { useRouter, useSearchParams } from 'next/navigation';
 interface AudioPlayerProps {
   audioFile: string;
   audioTitle: string;
+  episodeNumber: number;
 }
 
-const getEpisodeNumber = (audioTitle: string): string => {
-  return audioTitle
-    .split('')
-    .filter((el) => Number(el) || el == '0')
-    .join('');
-};
+// const getEpisodeNumber = (audioTitle: string): string => {
+//   return audioTitle
+//     .split('')
+//     .filter((el) => Number(el) || el == '0')
+//     .join('');
+// };
 
-const AudioPlayerC = ({ audioFile, audioTitle }: AudioPlayerProps) => {
+const AudioPlayerC = ({
+  audioFile,
+  audioTitle,
+  episodeNumber,
+}: AudioPlayerProps) => {
   const router = useRouter();
-  const episodeNumber = getEpisodeNumber(audioTitle);
+  // const episodeNumber = getEpisodeNumber(audioTitle);
   const searchParams = useSearchParams();
 
   const createQueryString = () => {
     const params = new URLSearchParams();
-    params.set('Ep', episodeNumber);
+    params.set('Ep', episodeNumber.toString());
     router.push(`?${params.toString()}`, {
       scroll: false,
     });
   };
 
-  if (episodeNumber !== searchParams.get('Ep')) {
+  if (episodeNumber.toString() !== searchParams.get('Ep')) {
     return (
-      <Button audioTitle={audioTitle} handleSetActive={createQueryString} />
+      <Button
+        audioTitle={audioTitle}
+        handleSetActive={createQueryString}
+        episodeNumber={episodeNumber}
+      />
     );
   }
 
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.episodeTitle}>
-        <strong>Ep. {episodeNumber}</strong>
+        <strong>
+          ({episodeNumber}) {audioTitle}
+        </strong>
       </h2>
       <Suspense fallback={<div className={styles.spinner} />}>
         <AudioPlayer src={audioFile} className={styles.audioPlayer} />

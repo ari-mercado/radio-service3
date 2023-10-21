@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function PodcastList() {
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.subheading}>Escúchalo Aquí, o En:</h2>
+      <p className={styles.subheading}>Escúchalo Aquí, o En:</p>
       <ul className={styles.podcastList}>
         <li>
           <div>

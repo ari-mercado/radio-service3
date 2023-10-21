@@ -1,9 +1,8 @@
 .button {
 	transition-duration: 0.4s;
 	text-transform: capitalize;
-	letter-spacing: 3px;
 	font-size: 20px;
-	padding: .5rem 2rem;
+	padding: .5rem 2rem .5rem 1rem;
 	margin: .7rem 0;
 	min-width: 100%;
 	cursor: pointer;
@@ -11,9 +10,10 @@
 	border-radius: 10px;
   width: 100%;
   margin: 0;
-  display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	justify-items: center;
+  display: flex;
+	justify-content: space-between;
+	// grid-template-columns: 1fr 1fr 1fr;
+	// justify-items: center;
   align-items: center;
 	border: none;
 	&:hover {
@@ -33,7 +33,7 @@
 }
 
 .buttonText {
-	grid-column-start: 2;
+	// grid-column-start: 2;
 	color: var(--color-green-dark);
 	font-size: 18px;
 	font-weight: lighter;

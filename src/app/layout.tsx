@@ -51,9 +51,15 @@ export default function RootLayout({
       </head>
       <body className={styles.main}>
         <div className={styles.bgImage} />
-        <Header />
-        {children}
-        <Footer />
+        <div>
+          <Header />
+        </div>
+
+        <div className={styles.mainContent}>{children}</div>
+
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </body>
     </html>
   );

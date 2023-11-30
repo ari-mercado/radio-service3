@@ -1,13 +1,12 @@
 .monthsWrapper {
 	display: grid;
-  grid-template-columns: 10rem 10rem;
-  gap: 2.5rem 2rem;
+  grid-template-columns: repeat(2, minmax(10rem, 15rem));
+  gap: 2.8rem 1.5rem;
   min-width: 5rem;
+  width: 100%;
   place-content: center;
-	height: 100%;
 	min-width: 11rem;
 	margin: 0 4.5rem;
-  height: auto;
   margin: 0 auto;
   margin-left: 1.5rem;
 
@@ -16,15 +15,16 @@
 	}
 
 	@media all and (max-width: 930px) {
-		flex-direction: column;
-    justify-content: center;
     gap: 1rem;
     margin: 0 auto;
+    grid-template-columns: 12rem 12rem 12rem;
 	}
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 650px) {
     margin-left: 0;
     min-width: 8rem;
     margin: 2em auto 0 auto;
+    grid-template-columns: repeat(2, minmax(10rem, 15rem));
+    margin: 0 .3rem;
 	}
 }

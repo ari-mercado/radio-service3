@@ -23,7 +23,6 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: any) {
   const allMonths = (await getAllMonths('fourteen')) as string[];
-
   return (
     <>
       <aside className={styles.monthListWrapper}>

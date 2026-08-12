@@ -8,19 +8,14 @@ const PlayerList = dynamic(
   },
 );
 import { transformMonthToCollection } from '@/utils/utils';
+import data from '@/data/data.json';
 
-async function getAllMonths(year: string) {
-  const res = await fetch(
-    `${process.env.FOURTEEN_DATA_URL}/${year}/allMonths`,
-    {
-      cache: 'force-cache',
-    },
-  );
-  return res.json();
+function getAllMonths(year: string) {
+  return data[year].allMonths as string[];
 }
 
 export async function generateStaticParams() {
-  const allMonths = (await getAllMonths('fourteen')) as string[];
+  const allMonths = getAllMonths('fourteen');
   return allMonths.map((month) => ({
     months: transformMonthToCollection[month],
   }));
@@ -28,7 +23,7 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: any) {
   const { months } = await params;
-  const allMonths = (await getAllMonths('fourteen')) as string[];
+  const allMonths = getAllMonths('fourteen');
   return (
     <>
       <aside className={styles.monthListWrapper}>

@@ -12,6 +12,9 @@ const useIsDesktop = (): boolean => {
 
   useEffect(() => {
     window.addEventListener('resize', updateMedia);
+    // Intentional: takes the initial measurement on mount, since `window` is
+    // not available while rendering.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     updateMedia();
     return () => window.removeEventListener('resize', updateMedia);
   });

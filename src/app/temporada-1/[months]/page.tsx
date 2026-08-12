@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import styles from '../page.module.scss';
 import MonthList from '@/components/month-list/month-list.component';
 const PlayerList = dynamic(
-  () => import('@/components/player-list/player-list.component' as string),
+  () => import('@/components/player-list/player-list.component'),
   {
     loading: () => <div className={styles.spinner} />,
   },
@@ -10,7 +10,12 @@ const PlayerList = dynamic(
 import { transformMonthToCollection } from '@/utils/utils';
 
 async function getAllMonths(year: string) {
-  const res = await fetch(`${process.env.FOURTEEN_DATA_URL}/${year}/allMonths`);
+  const res = await fetch(
+    `${process.env.FOURTEEN_DATA_URL}/${year}/allMonths`,
+    {
+      cache: 'force-cache',
+    },
+  );
   return res.json();
 }
 
@@ -22,16 +27,16 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: any) {
+  const { months } = await params;
   const allMonths = (await getAllMonths('fourteen')) as string[];
   return (
     <>
       <aside className={styles.monthListWrapper}>
-        <MonthList allMonths={allMonths} currentMonth={params.months} />
+        <MonthList allMonths={allMonths} currentMonth={months} />
       </aside>
 
       <section className={styles.playerListWrapper}>
-        {/* @ts-expect-error Server Component */}
-        <PlayerList month={params.months} />
+        <PlayerList month={months} />
       </section>
     </>
   );

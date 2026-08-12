@@ -1,13 +1,11 @@
-import dynamic from 'next/dynamic';
 import styles from './player-list.module.scss';
-const AudioPlayer = dynamic(() => import('../player/player.component'), {
-  // disable server prerendering to prevent hydration errors
-  ssr: false,
-});
+import AudioPlayer from '../player/player-dynamic.component';
 import { transformCollectionToMonth } from '@/utils/utils';
 
 const getAudioData = async (currentMonth) => {
-  const res = await fetch(process.env.FOURTEEN_DATA_URL);
+  const res = await fetch(process.env.FOURTEEN_DATA_URL, {
+    cache: 'force-cache',
+  });
   const data = await res.json();
   const formattedMonth = transformCollectionToMonth[currentMonth];
   const { audioData } = data?.fourteen?.monthsData[formattedMonth];

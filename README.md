@@ -27,8 +27,8 @@
 
 ## Features
 
-- ⚡️ Next.js 13 (App Router)
-- ⚛️ React 18
+- ⚡️ Next.js 16 (App Router, Turbopack)
+- ⚛️ React 19
 - ⛑ TypeScript
 - 📏 ESLint — To find and fix problems in your code
 - 💖 Prettier — Code Formatter for consistent style
@@ -88,8 +88,8 @@ List of websites that started off with Next.js TypeScript Starter:
 
 ### Requirements
 
-- Node.js >= 16
-- pnpm 8
+- Node.js >= 20.9
+- pnpm 10
 
 ### Directory Structure
 

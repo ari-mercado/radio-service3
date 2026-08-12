@@ -1,19 +1,16 @@
 import styles from './player-list.module.scss';
 import AudioPlayer from '../player/player-dynamic.component';
 import { transformCollectionToMonth } from '@/utils/utils';
+import data from '@/data/data.json';
 
-const getAudioData = async (currentMonth) => {
-  const res = await fetch(process.env.FOURTEEN_DATA_URL, {
-    cache: 'force-cache',
-  });
-  const data = await res.json();
+const getAudioData = (currentMonth) => {
   const formattedMonth = transformCollectionToMonth[currentMonth];
   const { audioData } = data?.fourteen?.monthsData[formattedMonth];
   return audioData;
 };
 
-const PlayerList = async ({ month }: { month: string }) => {
-  const audioData = await getAudioData(month);
+const PlayerList = ({ month }: { month: string }) => {
+  const audioData = getAudioData(month);
 
   return (
     <div className={styles.playerWrapper}>

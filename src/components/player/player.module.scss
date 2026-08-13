@@ -43,6 +43,27 @@
 	// padding-block: rem;
 }
 
+// Sits inside .rhap_play-pause-button, which is a fixed 40x40 box.
+.buttonSpinner {
+	display: block;
+	box-sizing: border-box;
+	width: 28px;
+	height: 28px;
+	margin: 6px;
+	border: 3px solid rgba(195, 195, 195, 0.6);
+	border-radius: 50%;
+	border-top-color: var(--color-flat-green);
+	animation: buttonSpin 0.8s linear infinite;
+	-webkit-animation: buttonSpin 0.8s linear infinite;
+}
+
+@keyframes buttonSpin {
+	to {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
 .spinner {
 	display: block;
 	padding: 2rem;

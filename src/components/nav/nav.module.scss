@@ -86,7 +86,9 @@
 				}
 			}
 
-			a {
+			// Covers both branches: a <Link> for a published season, a plain <span>
+			// for one that is still coming soon.
+			.seasonLink {
 				text-decoration: none;
 				color: black;
 				font-size: 1.2rem;
@@ -109,15 +111,34 @@
 			}
 		}
 
-    li:nth-child(2) {
+    // Not navigable until the season exists. Keyed off the season's own state
+    // rather than its position in the list, so the order can change freely.
+    .comingSoon {
       pointer-events: none;
+      cursor: default;
+    }
+
+    // Replaces the old useIsDesktop() hook: both labels are in the HTML and the
+    // viewport decides, so there is no measure-then-swap flash on mobile.
+    .labelShort {
+      display: none;
+    }
+
+    @media all and (max-width: 845px) {
+      .labelLong {
+        display: none;
+      }
+
+      .labelShort {
+        display: inline;
+      }
     }
 	}
 }
 
 .activeItem {
 	background-color: var(--color-flat-green) !important;
-	a {
+	.seasonLink {
 		color: #ffffff !important;
 	}
 }

@@ -1,12 +1,9 @@
-import dynamic from 'next/dynamic';
 import styles from '../page.module.scss';
 import MonthList from '@/components/month-list/month-list.component';
-const PlayerList = dynamic(
-  () => import('@/components/player-list/player-list.component'),
-  {
-    loading: () => <div className={styles.spinner} />,
-  },
-);
+// Imported directly rather than through next/dynamic: this is a Server
+// Component, so lazy-loading it saves no client JS and only risks shipping the
+// loading spinner to the static HTML in place of the episode list.
+import PlayerList from '@/components/player-list/player-list.component';
 import { transformMonthToCollection } from '@/utils/utils';
 import data from '@/data/data.json';
 

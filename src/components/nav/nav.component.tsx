@@ -1,80 +1,82 @@
-'use client';
-
-import React, { useState, useEffect, useCallback } from 'react';
+import React from 'react';
+import Link from 'next/link';
 import styles from './nav.module.scss';
 
-const useIsDesktop = (): boolean => {
-  const [isDesktop, setDesktop] = useState<boolean>(true);
-
-  const updateMedia = useCallback(() => {
-    setDesktop(window.innerWidth > 845);
-  }, [setDesktop]);
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    // Intentional: takes the initial measurement on mount, since `window` is
-    // not available while rendering.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    updateMedia();
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
-  return isDesktop;
+type Season = {
+  key: string;
+  label: string;
+  // Swapped in for `label` on narrow screens. Which one shows is a media query
+  // in the stylesheet, so both ship in the HTML and neither depends on JS.
+  shortLabel: string;
+  // `null` while the season has no pages to link to, which is what makes it
+  // render as "coming soon" rather than as a link.
+  href: string | null;
 };
 
-const NavBar = () => {
-  const [active, setActive] = useState<string>('fourteen');
-  const isDesktop = useIsDesktop();
+const seasons: Season[] = [
+  {
+    key: 'fourteen',
+    label: 'Temporada 1',
+    shortLabel: 'Temp 1',
+    href: '/temporada-1/1-4?Ep=1',
+  },
+  {
+    key: 'fifteen',
+    label: 'Temporada 2',
+    shortLabel: 'Temp 2',
+    href: null,
+  },
+];
 
+// Only one season is published, so the highlighted item never changes and can
+// be decided here at build time. Once Temporada 2 ships, this has to come from
+// the current route instead — `usePathname()` in a client component, or a prop
+// threaded down from the route's own layout to keep the nav on the server.
+const ACTIVE_SEASON_KEY = 'fourteen';
+
+const SeasonLabel = ({ season }: { season: Season }) => (
+  <>
+    <span className={styles.labelLong}>{season.label}</span>
+    <span className={styles.labelShort}>{season.shortLabel}</span>
+    {season.href === null && (
+      <span className={styles.pronto}> (llegará pronto)</span>
+    )}
+  </>
+);
+
+const NavBar = () => {
   return (
     <nav className={styles.mainMenu}>
       <ul>
-        <li
-          onClick={() => {
-            setActive('fourteen');
-          }}
-          className={`
-            ${active === 'fourteen' ? styles.activeItem : ''}
-          `}
-        >
-          {isDesktop ? <a>Temporada 1</a> : <a>Temp 1</a>}
-        </li>
+        {seasons.map((season) => {
+          const isActive = season.key === ACTIVE_SEASON_KEY;
 
-        <li
-          onClick={() => {
-            setActive('fifteen');
-          }}
-          className={`
-            ${active === 'fifteen' ? styles.activeItem : ''}
-          `}
-        >
-          {isDesktop ? (
-            <a>
-              Temporada 2{' '}
-              <span className={styles.pronto}> (llegará pronto)</span>
-            </a>
-          ) : (
-            <a>
-              Temp 2<span className={styles.pronto}> (llegará pronto)</span>
-            </a>
-          )}
-        </li>
-
-        {/* <li
-					onClick={() => {
-						handleYear('sixteen');
-						setActive('sixteen');
-					}}
-					className={`
-            ${active === 'sixteen' ? styles.activeItem : ''}
-          `}
-				>
-					{isDesktop ? (
-						<a>Temporada 3</a>
-					) : (
-						<a>Temp 3</a>
-					)}
-				</li> */}
+          return (
+            <li
+              key={season.key}
+              className={[
+                isActive ? styles.activeItem : '',
+                season.href === null ? styles.comingSoon : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
+              {season.href === null ? (
+                <span className={styles.seasonLink} aria-disabled="true">
+                  <SeasonLabel season={season} />
+                </span>
+              ) : (
+                <Link
+                  href={season.href}
+                  className={styles.seasonLink}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  <SeasonLabel season={season} />
+                </Link>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

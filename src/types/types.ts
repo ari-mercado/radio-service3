@@ -1,7 +1,6 @@
 export type AudioData = {
   audioTitle: string;
   audioFile: string;
-  isFromSoundCloud: boolean;
 };
 
 export interface Month {

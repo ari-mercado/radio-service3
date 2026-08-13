@@ -4,7 +4,7 @@ const AudioPlayer = lazy(() => import('react-h5-audio-player'));
 import './player-overwrite.scss';
 import styles from './player.module.scss';
 import Button from '../button/button.component';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 const spinner = <span className={styles.buttonSpinner} />;
 
@@ -26,7 +26,6 @@ const AudioPlayerC = ({
   audioTitle,
   episodeNumber,
 }: AudioPlayerProps) => {
-  const router = useRouter();
   // const episodeNumber = getEpisodeNumber(audioTitle);
   const searchParams = useSearchParams();
 
@@ -37,22 +36,8 @@ const AudioPlayerC = ({
   const [isBuffering, setIsBuffering] = useState(false);
   const stopBuffering = () => setIsBuffering(false);
 
-  const createQueryString = () => {
-    const params = new URLSearchParams();
-    params.set('Ep', episodeNumber.toString());
-    router.push(`?${params.toString()}`, {
-      scroll: false,
-    });
-  };
-
   if (episodeNumber.toString() !== searchParams.get('Ep')) {
-    return (
-      <Button
-        audioTitle={audioTitle}
-        handleSetActive={createQueryString}
-        episodeNumber={episodeNumber}
-      />
-    );
+    return <Button audioTitle={audioTitle} episodeNumber={episodeNumber} />;
   }
 
   return (

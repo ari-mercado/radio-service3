@@ -12,24 +12,30 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 1)
-    ),
-    url('/images/boat-sunset2.png');
-    background-repeat: no-repeat;
-    background-position: 35% bottom;
-    // background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     width: 100%;
-    z-index: -1;
     height: 35rem;
+    z-index: -1;
     opacity: 70%;
+    overflow: hidden;
+
+    // Was the first layer of the old `background-image` shorthand. It has to
+    // paint over the <Image>, so it becomes a pseudo-element instead.
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      );
+    }
+  }
+
+  // Reproduces the old `background-size: cover` / `background-position: 35% bottom`.
+  .bgImageInner {
+    object-fit: cover;
+    object-position: 35% bottom;
   }
 }
 

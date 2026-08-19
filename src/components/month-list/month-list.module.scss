@@ -10,6 +10,15 @@
   margin: 0 auto;
   margin-left: 1.5rem;
 
+  // The six rows of month buttons are centred against the episode column, and
+  // on laptop widths that column runs about 22px taller, so the two end
+  // unevenly. Widening the row gap grows the grid to meet it. Past ~1536px the
+  // episode description wraps to fewer lines and the columns already line up,
+  // and below 931px the layout stacks — neither needs the extra room.
+  @media all and (min-width: 931px) and (max-width: 1535px) {
+    row-gap: 3.35rem;
+  }
+
   @media all and (max-width: 1200px) {
     min-width: 10rem;
 	}

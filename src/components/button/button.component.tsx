@@ -24,7 +24,7 @@ const Button = ({ audioTitle, episodeNumber }: ButtonProps) => {
   return (
     <div className={styles.button} onClick={handleSetActive} role="button">
       <h2 className={styles.buttonText}>
-        ({episodeNumber}) {audioTitle}
+        {episodeNumber}: {audioTitle}
       </h2>
       <AiOutlineCaretDown className={styles.icon} />
     </div>

@@ -1,36 +1,45 @@
+// Holds the player and the description on one continuous surface. The grey and
+// the shadow are the values `.rhap_container` sets in player-overwrite.scss;
+// they live here instead so the description sits on the same panel rather than
+// under a separate box, and so the pair fades in together.
+.panel {
+	background-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.8s;
+	-webkit-animation: fadeIn 0.8s;
+}
+
+.description {
+	// Matches the 15px the player pads its own contents by, so the text lines up
+	// with the controls above it.
+	padding: 0 15px 12px;
+	color: var(--color-grey-dark-1);
+	font-size: 16px;
+	font-weight: lighter;
+	line-height: 1.5;
+
+	@media all and (max-width: 600px) {
+		font-size: 15px;
+	}
+}
+
 .audioPlayer {
 	margin: 0 auto;
 	width: 100%;
-	animation: fadeIn 0.8s;
-	-webkit-animation: fadeIn 0.8s;
-	-moz-animation: fadeIn 0.8s;
-	-o-animation: fadeIn 0.8s;
-	-ms-animation: fadeIn 0.8s;
-	
-	@keyframes fadeIn {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-	}
-	
-	@-moz-keyframes fadeIn {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-	}
-	
-	@-webkit-keyframes fadeIn {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-	}
-	
-	@-o-keyframes fadeIn {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-	}
-	
-	@-ms-keyframes fadeIn {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
-	}
+	// Surface and fade both moved to `.panel`, which wraps the player and the
+	// description so the two animate in as one element.
+	background-color: transparent;
+	box-shadow: none;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .episodeTitle {

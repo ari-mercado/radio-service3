@@ -12,6 +12,7 @@ interface AudioPlayerProps {
   audioFile: string;
   audioTitle: string;
   episodeNumber: number;
+  description: string;
 }
 
 // const getEpisodeNumber = (audioTitle: string): string => {
@@ -25,6 +26,7 @@ const AudioPlayerC = ({
   audioFile,
   audioTitle,
   episodeNumber,
+  description,
 }: AudioPlayerProps) => {
   // const episodeNumber = getEpisodeNumber(audioTitle);
   const searchParams = useSearchParams();
@@ -44,35 +46,50 @@ const AudioPlayerC = ({
     <div className={styles.wrapper}>
       <h2 className={styles.episodeTitle}>
         <strong>
-          ({episodeNumber}) {audioTitle}
+          {episodeNumber}: {audioTitle}
         </strong>
       </h2>
-      <Suspense fallback={<div className={styles.spinner} />}>
-        <AudioPlayer
-          src={audioFile}
-          className={styles.audioPlayer}
-          onPlay={(e) => {
-            // Anything below HAVE_FUTURE_DATA still has to download before it
-            // makes a sound; above it, playback starts instantly and showing a
-            // spinner would only flash.
-            const audio = e.target as HTMLAudioElement;
-            setIsBuffering(audio.readyState < audio.HAVE_FUTURE_DATA);
-          }}
-          onWaiting={() => setIsBuffering(true)}
-          onPlaying={stopBuffering}
-          onPause={stopBuffering}
-          onEnded={stopBuffering}
-          onAbort={stopBuffering}
-          onError={stopBuffering}
-          // Both slots need the spinner: the player considers itself playing
-          // while it buffers, so it is the pause icon that is on screen then.
-          // `undefined` falls through to the player's own default icon.
-          customIcons={{
-            play: isBuffering ? spinner : undefined,
-            pause: isBuffering ? spinner : undefined,
-          }}
-        />
-      </Suspense>
+      {/*
+        The player and the description share one grey panel, so the background
+        reads as a single surface rather than two stacked boxes. `.rhap_container`
+        gives up its own background and shadow to `.panel` for that reason.
+      */}
+      <div className={styles.panel}>
+        <Suspense fallback={<div className={styles.spinner} />}>
+          <AudioPlayer
+            src={audioFile}
+            className={styles.audioPlayer}
+            onPlay={(e) => {
+              // Anything below HAVE_FUTURE_DATA still has to download before it
+              // makes a sound; above it, playback starts instantly and showing a
+              // spinner would only flash.
+              const audio = e.target as HTMLAudioElement;
+              setIsBuffering(audio.readyState < audio.HAVE_FUTURE_DATA);
+            }}
+            onWaiting={() => setIsBuffering(true)}
+            onPlaying={stopBuffering}
+            onPause={stopBuffering}
+            onEnded={stopBuffering}
+            onAbort={stopBuffering}
+            onError={stopBuffering}
+            // Both slots need the spinner: the player considers itself playing
+            // while it buffers, so it is the pause icon that is on screen then.
+            // `undefined` falls through to the player's own default icon.
+            customIcons={{
+              play: isBuffering ? spinner : undefined,
+              pause: isBuffering ? spinner : undefined,
+            }}
+          />
+        </Suspense>
+        {/*
+          Hidden from assistive tech because the same text is already in the
+          screen-reader block that PlayerList renders for every episode, open
+          or closed. Without this it would be announced twice.
+        */}
+        <p className={styles.description} aria-hidden="true">
+          {description}
+        </p>
+      </div>
     </div>
   );
 };

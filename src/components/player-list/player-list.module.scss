@@ -7,7 +7,11 @@
   width: 100%;
 	border-radius: 7px;
 	padding-block: 1rem;
-  .playerArticle:not(:first-child) {
+  // Space *between* episodes. Written as an adjacent-sibling rule rather than
+  // `:not(:first-child)` because the JSON-LD <script> is this wrapper's first
+  // child, so no article ever matched `:first-child` and every episode — the
+  // top one included — was picking up a leading 2rem.
+  .playerArticle + .playerArticle {
     margin-top: 2rem;
   }
 

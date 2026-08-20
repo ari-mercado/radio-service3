@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import Image from 'next/image';
 import './globals.css';
 import styles from './layout.module.scss';
@@ -110,6 +111,7 @@ export default function RootLayout({
         <div className={styles.footer}>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );

@@ -11,11 +11,6 @@
     margin-block: 4rem;
 		background-color: rgba(100, 100, 100, 0);
 
-    .pronto {
-      font-size: 14px;
-      color: gray;
-    }
-
 		@media all and (max-width: 1300px) {
       margin-block: 3rem;
 		}
@@ -30,13 +25,14 @@
 			background-color: rgba(0, 0, 0, .07);
 		}
 
+		// Only a spacing box. Everything that reads as a button — the padding, the
+		// grey, the rounded corners — lives on the <a> inside, so the whole button
+		// is the link's hit target instead of just the words. The margins stay
+		// here: they are the gap between the two buttons, and that gap should not
+		// be clickable.
 		li {
-			padding: 0.5rem 2.5rem;
-			background-color: rgba(0, 0, 0, 0);
 			cursor: pointer;
 			z-index: 3;
-			border-radius: 10px;
-
 
 			&:first-child {
 				margin-left: 5rem;
@@ -53,10 +49,6 @@
 				}
 			}
 
-			&:hover {
-				font-weight: 600;
-			}
-
 			@media all and (max-width: 1313px) {
 				&:nth-child(2) {
 					margin: 0 4rem;
@@ -65,30 +57,25 @@
 
 			@media all and (max-width: 800px) {
 				&:nth-child(2) {
-					margin: 0 3rem;
-				}
-				padding: 0.5rem 2.1rem;
-			}
-
-			@media all and (max-width: 800px) {
-				font-size: 0 1.4rem;
-				padding: 0.3rem 2rem;
-				&:nth-child(2) {
 					margin: 0 2rem;
 				}
 			}
 
 			@media all and (max-width: 400px) {
-				font-size: 0 1.2rem;
-				padding: 0.2rem 1rem;
 				&:nth-child(2) {
 					margin: 0 1.5rem;
 				}
 			}
 
-			// Covers both branches: a <Link> for a published season, a plain <span>
-			// for one that is still coming soon.
 			.seasonLink {
+				// Was the <li>'s padding. On the anchor it makes the padded area part
+				// of the link, which is what makes the whole button clickable.
+				padding: 0.5rem 2.5rem;
+				// The same grey the month buttons use (`.link` in month.module.scss),
+				// so an unselected season reads as the same kind of control. The
+				// selected one is swapped to the green by `.activeItem` below.
+				background-color: rgba(0, 0, 0, 0.075);
+				border-radius: 10px;
 				text-decoration: none;
 				color: black;
 				font-size: 1.2rem;
@@ -97,26 +84,31 @@
 				display: block;
 				transition: all 0.5s ease;
 
+				// A touch more of the same black rather than a lighter wash, so the
+				// button darkens slightly under the cursor. `.activeItem` sets its
+				// green with `!important`, so the selected season keeps it here.
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.12);
+				}
+
 				@media all and (max-width: 1313px) {
 					font-size: 1.1rem;
 				}
 
 				@media all and (max-width: 800px) {
 					font-size: 1rem;
+					padding: 0.3rem 2rem;
 				}
 
 				@media all and (max-width: 600px) {
 					font-size: 1rem;
 				}
+
+				@media all and (max-width: 400px) {
+					padding: 0.2rem 1rem;
+				}
 			}
 		}
-
-    // Not navigable until the season exists. Keyed off the season's own state
-    // rather than its position in the list, so the order can change freely.
-    .comingSoon {
-      pointer-events: none;
-      cursor: default;
-    }
 
     // Replaces the old useIsDesktop() hook: both labels are in the HTML and the
     // viewport decides, so there is no measure-then-swap flash on mobile.
@@ -136,9 +128,11 @@
 	}
 }
 
+// The selected season. Both the surface and the text colour go on the anchor,
+// since that is what carries the button's appearance now.
 .activeItem {
-	background-color: var(--color-flat-green) !important;
 	.seasonLink {
+		background-color: var(--color-flat-green) !important;
 		color: #ffffff !important;
 	}
 }

@@ -18,6 +18,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
+    "data:build": "node scripts/build-data.mjs",
+    "data:check": "node scripts/build-data.mjs --check",
     "lint": "eslint \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier \"src/**/*.+(ts|js|tsx)\" --write",
     "prepare": "husky"

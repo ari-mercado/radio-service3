@@ -1,79 +1,47 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './nav.module.scss';
+import {
+  SEASONS,
+  firstEpisodeOfRange,
+  rangesOf,
+  seasonForPath,
+} from '@/config/seasons';
 
-type Season = {
-  key: string;
-  label: string;
-  // Swapped in for `label` on narrow screens. Which one shows is a media query
-  // in the stylesheet, so both ship in the HTML and neither depends on JS.
-  shortLabel: string;
-  // `null` while the season has no pages to link to, which is what makes it
-  // render as "coming soon" rather than as a link.
-  href: string | null;
-};
-
-const seasons: Season[] = [
-  {
-    key: 'fourteen',
-    label: 'Temporada 1',
-    shortLabel: 'Temp 1',
-    href: '/temporada-1/1-4?Ep=1',
-  },
-  {
-    key: 'fifteen',
-    label: 'Temporada 2',
-    shortLabel: 'Temp 2',
-    href: null,
-  },
-];
-
-// Only one season is published, so the highlighted item never changes and can
-// be decided here at build time. Once Temporada 2 ships, this has to come from
-// the current route instead — `usePathname()` in a client component, or a prop
-// threaded down from the route's own layout to keep the nav on the server.
-const ACTIVE_SEASON_KEY = 'fourteen';
-
-const SeasonLabel = ({ season }: { season: Season }) => (
-  <>
-    <span className={styles.labelLong}>{season.label}</span>
-    <span className={styles.labelShort}>{season.shortLabel}</span>
-    {season.href === null && (
-      <span className={styles.pronto}> (llegará pronto)</span>
-    )}
-  </>
-);
-
+// Both seasons are published, so the highlighted item depends on where the
+// visitor is. `usePathname` is read during prerendering too, so each statically
+// generated page ships with its own season already marked active — unlike
+// `useSearchParams`, it needs no Suspense boundary and forces no bailout.
 const NavBar = () => {
+  const pathname = usePathname() ?? '';
+  const activeSeason = seasonForPath(pathname);
+
   return (
     <nav className={styles.mainMenu}>
       <ul>
-        {seasons.map((season) => {
-          const isActive = season.key === ACTIVE_SEASON_KEY;
+        {SEASONS.map((season) => {
+          const isActive = season.number === activeSeason?.number;
+          // Open each season on its first group, with its first episode
+          // selected — the same entry point the month links use.
+          const firstRange = rangesOf(season)[0];
+          const href = `${season.basePath}/${firstRange}?Ep=${firstEpisodeOfRange(firstRange)}`;
 
           return (
             <li
-              key={season.key}
-              className={[
-                isActive ? styles.activeItem : '',
-                season.href === null ? styles.comingSoon : '',
-              ]
-                .filter(Boolean)
-                .join(' ')}
+              key={season.number}
+              className={isActive ? styles.activeItem : ''}
             >
-              {season.href === null ? (
-                <span className={styles.seasonLink} aria-disabled="true">
-                  <SeasonLabel season={season} />
-                </span>
-              ) : (
-                <Link
-                  href={season.href}
-                  className={styles.seasonLink}
-                  aria-current={isActive ? 'page' : undefined}
-                >
-                  <SeasonLabel season={season} />
-                </Link>
-              )}
+              <Link
+                href={href}
+                className={styles.seasonLink}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                <span className={styles.labelLong}>{season.label}</span>
+                <span className={styles.labelShort}>{season.shortLabel}</span>
+              </Link>
             </li>
           );
         })}

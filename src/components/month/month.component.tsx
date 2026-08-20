@@ -3,30 +3,35 @@ import styles from './month.module.scss';
 import Link from 'next/link';
 
 import {
-  transformMonthToCollectionWithSpace,
-  transformMonthToCollection,
-  firstEpisodeInMonth,
-} from '@/utils/utils';
+  MonthName,
+  SeasonConfig,
+  firstEpisodeOfRange,
+  spacedRange,
+} from '@/config/seasons';
 
 interface MonthProps {
-  month: string;
-  currentMonth: string;
+  season: SeasonConfig;
+  month: MonthName;
+  currentRange: string;
 }
 
-const Month = ({ month, currentMonth }: MonthProps) => {
-  // disabled because there actually isn't data available and it created an error
-  // const shouldDisable = month === 'diciembre' && year === 'sixteen';
-  // const params = useParams();
-  const isActive = transformMonthToCollection[month] === currentMonth;
+const Month = ({ season, month, currentRange }: MonthProps) => {
+  const range = season.monthRanges[month];
+  const isActive = range === currentRange;
+  // Absolute rather than relative, so a link means the same thing regardless of
+  // which season's page it is rendered on.
+  const href = `${season.basePath}/${range}?Ep=${firstEpisodeOfRange(range)}`;
+
   return (
     <Link
-      href={`${transformMonthToCollection[month]}?Ep=${firstEpisodeInMonth[month]}`}
+      href={href}
       scroll={false}
       className={`
       ${styles.link} ${isActive ? styles.activeMonth : ''}
     `}
+      aria-current={isActive ? 'page' : undefined}
     >
-      {transformMonthToCollectionWithSpace[month]}
+      {spacedRange(range)}
     </Link>
   );
 };

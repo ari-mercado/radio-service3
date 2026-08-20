@@ -5,6 +5,13 @@ import styles from './layout.module.scss';
 import Header from '../components/header/header.component';
 import Footer from '@/components/footer/footer.component';
 import { Poppins, Lobster } from 'next/font/google';
+import {
+  SITE_DESCRIPTION,
+  SITE_LANGUAGE,
+  SITE_LOCALE,
+  SITE_NAME,
+  SITE_URL,
+} from '@/config/site';
 
 // 500 is declared nowhere in the stylesheets; the weights below cover every
 // `font-weight` actually used (300 via `lighter`, 400 default, 600, 700 via
@@ -23,8 +30,29 @@ const lobster = Lobster({
 });
 
 export const metadata: Metadata = {
-  title: `Tu Hora Divina`,
-  description: `Escucha al pastor hablar sobre la vida, la biblia y Jesucristo.`,
+  // Resolves the relative canonical below, and any relative URL a route's own
+  // metadata declares.
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_NAME,
+    // Group pages supply their own specific title; this frames it.
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: SITE_LOCALE,
+  },
+  twitter: {
+    card: 'summary',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${lobster.variable}`}>
+    <html
+      lang={SITE_LANGUAGE}
+      className={`${poppins.variable} ${lobster.variable}`}
+    >
       <head>
         <link
           rel="apple-touch-icon"

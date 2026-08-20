@@ -1,16 +1,14 @@
 import { AudioData } from '@/types/types';
-
-export const SITE_URL = 'https://www.tuhoradivina.com';
+import { SeasonConfig, spacedRange } from '@/config/seasons';
+import {
+  PODCAST_PROFILES,
+  SITE_DESCRIPTION,
+  SITE_LANGUAGE,
+  SITE_NAME,
+  SITE_URL,
+} from '@/config/site';
 
 const PODCAST_ID = `${SITE_URL}#podcast`;
-
-// The three directories the header already links to. Listing them as `sameAs`
-// is what tells a crawler that this site and those listings are one podcast.
-const PODCAST_PROFILES = [
-  'https://podcasts.apple.com/us/podcast/tu-hora-divina/id1659299472',
-  'https://open.spotify.com/show/68i6aFTTVXB9c1afxfsHcx',
-  'https://castbox.fm/channel/id5241199',
-];
 
 /**
  * `00:54:03` -> `PT54M3S`, which is the ISO 8601 duration schema.org wants.
@@ -32,23 +30,49 @@ export const durationToIso8601 = (duration?: string): string | undefined => {
   return `PT${parts.join('')}`;
 };
 
-/** The episode's address is the month page plus its `Ep` param — no new route. */
-export const episodeUrl = (month: string, episodeNumber: number) =>
-  `${SITE_URL}/temporada-1/${month}?Ep=${episodeNumber}`;
+/**
+ * The page one group of episodes lives on. This is the canonical URL: it is the
+ * address that is statically generated, and the only one without a query string.
+ */
+export const groupUrl = (season: SeasonConfig, range: string) =>
+  `${SITE_URL}${season.basePath}/${range}`;
+
+/** An episode's own address — the group page plus its `Ep` param, no new route. */
+export const episodeUrl = (
+  season: SeasonConfig,
+  range: string,
+  episodeNumber: number,
+) => `${groupUrl(season, range)}?Ep=${episodeNumber}`;
+
+const seasonId = (season: SeasonConfig) =>
+  `${SITE_URL}#temporada-${season.number}`;
 
 const podcastSeries = {
   '@type': 'PodcastSeries',
   '@id': PODCAST_ID,
-  name: 'Tu Hora Divina',
-  description:
-    'Escucha al pastor hablar sobre la vida, la biblia y Jesucristo.',
+  name: SITE_NAME,
+  description: SITE_DESCRIPTION,
   url: SITE_URL,
-  inLanguage: 'es',
+  inLanguage: SITE_LANGUAGE,
   sameAs: PODCAST_PROFILES,
 };
 
-const podcastEpisode = (month: string, episode: AudioData) => {
-  const url = episodeUrl(month, episode.episodeNumber);
+const podcastSeason = (season: SeasonConfig) => ({
+  '@type': 'PodcastSeason',
+  '@id': seasonId(season),
+  name: season.label,
+  seasonNumber: season.number,
+  url: `${SITE_URL}${season.basePath}`,
+  inLanguage: SITE_LANGUAGE,
+  partOfSeries: { '@id': PODCAST_ID },
+});
+
+const podcastEpisode = (
+  season: SeasonConfig,
+  range: string,
+  episode: AudioData,
+) => {
+  const url = episodeUrl(season, range, episode.episodeNumber);
   const duration = durationToIso8601(episode.duration);
 
   return {
@@ -56,11 +80,13 @@ const podcastEpisode = (month: string, episode: AudioData) => {
     '@id': url,
     url,
     name: episode.audioTitle,
+    // Global across the catalog, 1-74 — not restarted per season.
     episodeNumber: episode.episodeNumber,
     description: episode.description,
     datePublished: episode.date,
-    inLanguage: 'es',
+    inLanguage: SITE_LANGUAGE,
     partOfSeries: { '@id': PODCAST_ID },
+    partOfSeason: { '@id': seasonId(season) },
     // Spread so an episode missing either one omits the key instead of
     // publishing `undefined`.
     ...(duration ? { duration } : {}),
@@ -74,14 +100,41 @@ const podcastEpisode = (month: string, episode: AudioData) => {
   };
 };
 
-/** JSON-LD for one month page: the series, plus the episodes it lists. */
-export const monthStructuredData = (month: string, episodes: AudioData[]) => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    podcastSeries,
-    ...episodes.map((episode) => podcastEpisode(month, episode)),
-  ],
-});
+/**
+ * JSON-LD for one group page: the series and the season it belongs to, the
+ * episodes it lists, and an ItemList tying them to this page in display order.
+ */
+export const groupStructuredData = (
+  season: SeasonConfig,
+  range: string,
+  episodes: AudioData[],
+) => {
+  const episodeNodes = episodes.map((episode) =>
+    podcastEpisode(season, range, episode),
+  );
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      podcastSeries,
+      podcastSeason(season),
+      ...episodeNodes,
+      {
+        '@type': 'ItemList',
+        '@id': `${groupUrl(season, range)}#lista`,
+        name: `${season.label}: episodios ${spacedRange(range)}`,
+        numberOfItems: episodeNodes.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: episodeNodes.map((node, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          url: node.url,
+          item: { '@id': node['@id'] },
+        })),
+      },
+    ],
+  };
+};
 
 /** `<` is escaped so the payload can never close the surrounding script tag. */
 export const serializeJsonLd = (data: unknown) =>

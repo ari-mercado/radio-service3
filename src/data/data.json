@@ -1,6 +1,7 @@
 {
   "fourteen": {
-    "year": "fourteen",
+    "seasonNumber": 1,
+    "seasonTitle": "Temporada 1",
     "allMonths": [
       "enero",
       "febrero",
@@ -15,105 +16,16 @@
       "noviembre",
       "diciembre"
     ],
-    "yearTitle": "2014",
     "monthsData": {
-      "mayo": {
-        "audioData": [
-          {
-            "date": "2014-05-10",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960699/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Feda923da-5a61-9b97-7538-08df4f2e8172.mp3",
-            "audioTitle": "El Amor de una Madre (1)",
-            "episodeNumber": 18,
-            "description": "Primera parte de un homenaje al amor, el sacrificio y la dedicación de las madres. El pastor Ariel relaciona ese amor protector con la compasión de Dios y anima a los hijos a honrar y agradecer a sus madres.",
-            "slug": "18-el-amor-de-una-madre-1",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/18-El-Amor-de-una-Madre-1-e1s1d1r",
-            "duration": "00:51:26"
-          },
-          {
-            "date": "2014-05-17",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960931/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fc1cdce9e-010e-9d44-ed8f-a285abbcafcb.mp3",
-            "audioTitle": "El Amor de una Madre (2)",
-            "episodeNumber": 19,
-            "description": "La segunda parte continúa celebrando el valor espiritual y familiar de una madre. Mediante recuerdos y enseñanzas bíblicas, el episodio destaca su entrega, sus consejos y la importancia de reconocer su amor mientras está presente.",
-            "slug": "19-el-amor-de-una-madre-2",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/19-El-Amor-de-una-Madre-2-e1s1d93",
-            "duration": "00:45:27"
-          },
-          {
-            "date": "2014-05-24",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61961033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F5a04aca3-6eb1-0de8-da67-7fd1bc8f4fd3.mp3",
-            "audioTitle": "¿Por Qué Debería Pedir Perdón?",
-            "episodeNumber": 20,
-            "description": "Pedir perdón puede ser difícil, pero es esencial para la reconciliación con Dios y con los demás. El mensaje habla del arrepentimiento, la humildad y la necesidad de perdonar de la misma manera en que deseamos ser perdonados.",
-            "slug": "20-por-que-deberia-pedir-perdon",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/20-Por-qu-Debera-Pedir-Perdn-e1s1dc9",
-            "duration": "00:52:10"
-          },
-          {
-            "date": "2014-05-31",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435117/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2F4a25d5ed-fd99-f5b1-1dea-34874f5549a5.mp3",
-            "audioTitle": "Seguir a Jesucristo",
-            "episodeNumber": 21,
-            "description": "¿Qué significa realmente seguir a Jesucristo? Este episodio presenta el discipulado como una vida de fe, obediencia y entrega, en la que la Palabra de Dios alimenta el espíritu y orienta nuestras decisiones diarias.",
-            "slug": "21-seguir-a-jesucristo",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/21-Seguir-a-Jesucristo-e1sfsbd",
-            "duration": "00:54:59"
-          }
-        ],
-        "monthTitle": "Mayo"
-      },
-      "abril": {
-        "audioData": [
-          {
-            "date": "2014-04-05",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957142/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fe752c0db-d5fb-fc5c-756e-4ddb8ce29302.mp3",
-            "audioTitle": "La Obediencia",
-            "episodeNumber": 14,
-            "description": "Una enseñanza sobre la fe, la obediencia y la razón por la que Jesucristo murió y resucitó. El episodio invita a seguir la voluntad de Dios, confiar en su gracia y reconocer a Jesús como el único camino al Padre.",
-            "slug": "14-la-obediencia",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/14-La-Obediencia-e1s19im",
-            "duration": "00:54:10"
-          },
-          {
-            "date": "2014-04-12",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957312/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F5cc0f594-9d7a-fc0d-089d-9884b7082eec.mp3",
-            "audioTitle": "Moisés",
-            "episodeNumber": 15,
-            "description": "La vida de Moisés muestra cómo Dios puede proteger, llamar y usar a una persona para cumplir un propósito mayor. El mensaje recorre su nacimiento y misión, y destaca la oración, la fe y la obediencia frente a situaciones difíciles.",
-            "slug": "15-moises",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/15-Moiss-e1s19o0",
-            "duration": "00:55:31"
-          },
-          {
-            "date": "2014-04-19",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F7751b948-9bc6-1081-4c5c-2576fd6bc7c6.mp3",
-            "audioTitle": "Resurrección",
-            "episodeNumber": 16,
-            "description": "Un mensaje especial sobre la resurrección de Jesucristo y la esperanza que ofrece a todo creyente. Porque Cristo venció la muerte, quienes confían en Él reciben la promesa de resurrección y vida eterna en la presencia de Dios.",
-            "slug": "16-resurreccion",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/16-La-Resurreccin-e1s1a7t",
-            "duration": "00:54:29"
-          },
-          {
-            "date": "2014-04-26",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960592/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fbd1435ae-7cba-f1e9-c7ac-aaf1d671a76e.mp3",
-            "audioTitle": "Tropiezos en la Vida",
-            "episodeNumber": 17,
-            "description": "Todos encontramos tropiezos, pruebas y tentaciones en nuestro camino. Este episodio enseña cómo enfrentarlos con oración, la Palabra de Dios y confianza en Jesucristo, recordando que Dios no abandona a quienes le buscan.",
-            "slug": "17-tropiezos-en-la-vida",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/17-Tropiezos-en-la-Vida-e1s1cug",
-            "duration": "00:55:33"
-          }
-        ],
-        "monthTitle": "Abril"
-      },
       "enero": {
+        "monthTitle": "Enero",
         "audioData": [
           {
             "date": "2014-01-04",
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61471596/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-10-30%2Fdfca5a12-bc82-9b8b-fe28-06340de90d11.mp3",
             "audioTitle": "¿Por Qué Hay Pruebas?",
             "episodeNumber": 1,
+            "season": 1,
             "description": "Una reflexión cristiana sobre las pruebas de la vida y la manera en que pueden fortalecer nuestra fe. El pastor Ariel invita a confiar en Dios, responder con amor y perseverar con los ojos puestos en Jesucristo.",
             "slug": "1-por-que-hay-pruebas",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/01-Por-Qu-Hay-Pruebas-e1rifdc",
@@ -124,6 +36,7 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61740063/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-6%2F4c885a71-624e-2502-dd63-107eb6ad1cab.mp3",
             "audioTitle": "Desde Aquel Día",
             "episodeNumber": 2,
+            "season": 1,
             "description": "Este episodio reflexiona sobre las palabras de Jesús: «En aquel día no me preguntaréis nada». Una enseñanza sobre la presencia, el conocimiento y el poder de Dios, y sobre la transformación espiritual que comienza al recibir a Jesucristo.",
             "slug": "2-desde-aquel-dia",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/02-Desde-Aquel-Da-e1rqliv",
@@ -134,6 +47,7 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61778787/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-6%2F1360cbde-0884-30b8-2238-8fd78802713c.mp3",
             "audioTitle": "Amor Sin Condición",
             "episodeNumber": 3,
+            "season": 1,
             "description": "Una enseñanza acerca del amor incondicional de Dios, ilustrado también por el amor de una madre. El mensaje recuerda que nada puede separarnos del amor de Cristo y nos llama a perdonar y amar aun en circunstancias difíciles.",
             "slug": "3-amor-sin-condicion",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/03-Amor-Sin-Condicin-e1rrrd3",
@@ -144,161 +58,23 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61779111/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-6%2Faa70579c-53b0-7d9e-ea5a-47787d101571.mp3",
             "audioTitle": "Jonás el Profeta",
             "episodeNumber": 4,
+            "season": 1,
             "description": "La historia bíblica de Jonás muestra las consecuencias de huir del llamado de Dios y la importancia de obedecer. El episodio destaca el arrepentimiento, la misericordia divina y la misión de llevar la Palabra a quienes necesitan escucharla.",
             "slug": "4-jonas-el-profeta",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/04-Jons-El-Profeta-e1rrrn7",
             "duration": "00:55:05"
           }
-        ],
-        "monthTitle": "Enero"
-      },
-      "julio": {
-        "audioData": [
-          {
-            "date": "2014-07-19",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2F4fa216c1-2891-7213-d7f5-f40ee1280731.mp3",
-            "audioTitle": "¿Qué Significa Creer en Dios?",
-            "episodeNumber": 23,
-            "description": "Creer en Dios es más que pronunciar su nombre: implica escuchar sus palabras y ponerlas en práctica. A partir de la casa edificada sobre la roca, el episodio invita a construir la vida sobre Jesucristo, la fe y la obediencia.",
-            "slug": "23-que-significa-creer-en-dios",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/23-Qu-Significa-Creer-en-Dios-e1sft11",
-            "duration": "00:53:23"
-          }
-        ],
-        "monthTitle": "Julio"
-      },
-      "junio": {
-        "audioData": [
-          {
-            "date": "2014-06-07",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435650/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2Fce92f6ec-1817-b6a5-a60e-ba84eb4f67c9.mp3",
-            "audioTitle": "Padre Celestial, Padre Terrenal",
-            "episodeNumber": 22,
-            "description": "La parábola del hijo pródigo sirve para comparar el cuidado de un padre terrenal con la misericordia del Padre celestial. Una reflexión sobre la desobediencia, el regreso a Dios, el perdón y el amor que restaura al hijo arrepentido.",
-            "slug": "22-padre-celestial-padre-terrenal",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/22-Padre-Celestial--Padre-Terrenal-e1sfss2",
-            "duration": "00:54:32"
-          }
-        ],
-        "monthTitle": "Junio"
-      },
-      "marzo": {
-        "audioData": [
-          {
-            "date": "2014-03-01",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61903223/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2Fe6c5c867-12c4-ecc6-e4f0-280972f8c3e4.mp3",
-            "audioTitle": "Los Hijos Pródigos",
-            "episodeNumber": 9,
-            "description": "La parábola del hijo pródigo enseña acerca de la desobediencia, el arrepentimiento y el perdón. El episodio recuerda que Dios recibe con misericordia a quienes regresan a Él y nos anima a valorar a nuestra familia y al Padre celestial.",
-            "slug": "9-los-hijos-prodigos",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/09-Los-Hijos-Prodigos-e1rvktn",
-            "duration": "00:55:00"
-          },
-          {
-            "date": "2014-03-08",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61903467/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2F7bba5761-8ec6-4548-bd15-98971077ba66.mp3",
-            "audioTitle": "Sobre los Ángeles",
-            "episodeNumber": 10,
-            "description": "Una conversación bíblica sobre los ángeles, sus funciones como mensajeros y servidores de Dios, y la protección que Él puede brindar por medio de ellos. El mensaje recalca que la adoración y la confianza pertenecen solamente a Dios.",
-            "slug": "10-sobre-los-angeles",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/10-Sobre-Los-ngeles-e1rvl5b",
-            "duration": "00:55:20"
-          },
-          {
-            "date": "2014-03-15",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61950815/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F18617697-9a13-0f24-968d-81c58e216208.mp3",
-            "audioTitle": "Pecado y la Promesa de Salvación",
-            "episodeNumber": 11,
-            "description": "Continuando el tema de los ángeles, el pastor explica que ningún ángel ni ser humano puede librarnos del pecado. La promesa de salvación viene de Dios por medio de la sangre de Jesucristo, y se recibe con fe, arrepentimiento y obediencia.",
-            "slug": "11-pecado-y-la-promesa-de-salvacion",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/11-Pecado-y-La-Promesa-de-Salvacion-e1s13cv",
-            "duration": "00:53:43"
-          },
-          {
-            "date": "2014-03-22",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61951024/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fb8c9c1a3-8741-aa83-1aef-ae1369b1ba4f.mp3",
-            "audioTitle": "El Salvador del Mundo",
-            "episodeNumber": 12,
-            "description": "Un llamado a poner los ojos en Jesús, autor y consumador de la fe y Salvador del mundo. El episodio recuerda su sacrificio en la cruz, su sangre derramada por el pecado y la esperanza de vida eterna para quienes creen en Él.",
-            "slug": "12-el-salvador-del-mundo",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/12-El-Salvador-del-mundo-e1s13jg",
-            "duration": "00:53:27"
-          },
-          {
-            "date": "2014-03-29",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61951260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F030dde5d-7208-1fa0-0e6c-b993430ffd48.mp3",
-            "audioTitle": "El Gran Amor de Dios",
-            "episodeNumber": 13,
-            "description": "Este mensaje presenta el gran amor de Dios como una gracia que supera el entendimiento humano. Una reflexión sobre Jesucristo, el perdón, la salvación y la invitación de Dios a vivir en comunión con Él.",
-            "slug": "13-el-gran-amor-de-dios",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/13-El-Gran-Amor-de-Dios-e1s13qs",
-            "duration": "00:45:14"
-          }
-        ],
-        "monthTitle": "Marzo"
-      },
-      "agosto": {
-        "audioData": [
-          {
-            "date": "2014-08-02",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523580/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2F4a4973e3-f3cb-5ee2-911b-a87077da36d8.mp3",
-            "audioTitle": "¿Cómo Reconozco al Espíritu?",
-            "episodeNumber": 24,
-            "description": "Una enseñanza sobre la necesidad de conocer a Jesucristo y nacer de nuevo por el Espíritu Santo. El mensaje ofrece claves bíblicas para reconocer la obra del Espíritu, recibir salvación y vivir con la esperanza de la vida eterna.",
-            "slug": "24-como-reconozco-al-espiritu",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/24-Cmo-Reconozco-al-Espritu-e1siins",
-            "duration": "00:52:40"
-          },
-          {
-            "date": "2014-08-09",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523728/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fd16a08c6-6ed9-bae7-4f42-537a8d437669.mp3",
-            "audioTitle": "Para la Gloria de Dios",
-            "episodeNumber": 25,
-            "description": "Todo lo que hacemos debe buscar la gloria de Dios y no la nuestra. Este episodio examina enseñanzas de Jesús que pueden resultar difíciles, pero que llaman al creyente a amar a Dios primero, apartarse del mundo y vivir para agradarle.",
-            "slug": "25-para-la-gloria-de-dios",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/25-Para-la-Gloria-de-Dios-e1siisg",
-            "duration": "00:53:48"
-          },
-          {
-            "date": "2014-08-16",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523906/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2F9636bc16-dcba-0aaa-7fe7-f5b26e480b61.mp3",
-            "audioTitle": "El Amor Verdadero",
-            "episodeNumber": 26,
-            "description": "El amor verdadero no depende de condiciones ni de lo que recibimos a cambio. El pastor Ariel contrasta el amor humano con el amor perfecto de Dios, manifestado en Jesucristo y en su sacrificio por la salvación del mundo.",
-            "slug": "26-el-amor-verdadero",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/26-El-Amor-Verdadero-e1sij22",
-            "duration": "00:56:54"
-          },
-          {
-            "date": "2014-08-23",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62524827/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fb4968c01-e273-fbfd-025b-7cbccd3bb2b5.mp3",
-            "audioTitle": "Puestos los Ojos en Jesús",
-            "episodeNumber": 27,
-            "description": "Basado en Hebreos, este mensaje anima a dejar el peso del pecado y correr con paciencia la carrera de la fe. Poner los ojos en Jesús ayuda al creyente a perseverar, superar distracciones y recordar quién es el autor y consumador de la fe.",
-            "slug": "27-puestos-los-ojos-en-jesus",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/27-Puestos-Los-Ojos-en-Jess-e1sijur",
-            "duration": "00:51:23"
-          },
-          {
-            "date": "2014-08-30",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62524999/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fed433988-d20e-c0c6-c631-b0aeb0218196.mp3",
-            "audioTitle": "Leer la Biblia",
-            "episodeNumber": 28,
-            "description": "Una invitación a leer y estudiar la Biblia para conocer a Dios, fortalecer la fe y distinguir la verdad. El episodio explica por qué la confianza espiritual no debe descansar solamente en personas o cosas, sino en la Palabra del Señor.",
-            "slug": "28-leer-la-biblia",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/28-Leer-la-Biblia-e1sik47",
-            "duration": "00:50:00"
-          }
-        ],
-        "monthTitle": "Agosto"
+        ]
       },
       "febrero": {
+        "monthTitle": "Febrero",
         "audioData": [
           {
             "date": "2014-02-01",
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61902402/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2F50677f01-7672-5812-4183-9d9b0ab7707b.mp3",
             "audioTitle": "Adorar a Dios en Espíritu y en Verdad",
             "episodeNumber": 5,
+            "season": 1,
             "description": "¿Qué significa adorar verdaderamente a Dios? Este mensaje explica la adoración en espíritu y en verdad como una entrega sincera del corazón, guiada por el Espíritu Santo y fundamentada en la Palabra de Dios.",
             "slug": "5-adorar-a-dios-en-espiritu-y-en-verdad",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/05-Adorar-a-Dios-en-Espritu-y-en-Verdad-e1rvk42",
@@ -309,6 +85,7 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61902597/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2Fd034b6eb-8876-aa5d-fc2c-cc3d10dfb7da.mp3",
             "audioTitle": "El Amor de Dios",
             "episodeNumber": 6,
+            "season": 1,
             "description": "Una reflexión sobre el amor eterno de Dios y la salvación ofrecida por gracia mediante Jesucristo. El pastor Ariel enseña que amar a Dios no consiste solamente en palabras, sino también en fe, obediencia y una vida transformada.",
             "slug": "6-el-amor-de-dios",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/06-El-Amor-de-Dios-e1rvka5",
@@ -319,6 +96,7 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61902886/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2Fcad03bd0-e15a-4e97-9f15-3c6a16791331.mp3",
             "audioTitle": "El Camino, la Verdad y la Vida",
             "episodeNumber": 7,
+            "season": 1,
             "description": "Jesucristo se presenta como el camino, la verdad y la vida. El episodio habla de su muerte y resurrección, de la victoria sobre el pecado y de la importancia de conocer las Escrituras para crecer como una nueva criatura en Cristo.",
             "slug": "7-el-camino-la-verdad-y-la-vida",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/07-El-Camino--Verdad--y-la-Vida-e1rvkj6",
@@ -329,136 +107,273 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61903037/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2F49dab94e-0ece-5263-a130-2882cd78f9e9.mp3",
             "audioTitle": "Sembrar la Semilla",
             "episodeNumber": 8,
+            "season": 1,
             "description": "Basado en la parábola del sembrador, este mensaje explica que la semilla es la Palabra de Dios y que cada corazón puede recibirla de manera diferente. Una invitación a escuchar, conservar la enseñanza y producir fruto espiritual.",
             "slug": "8-sembrar-la-semilla",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/08-Sembrar-la-Semilla-e1rvknt",
             "duration": "00:53:54"
           }
-        ],
-        "monthTitle": "Febrero"
+        ]
       },
-      "octubre": {
+      "marzo": {
+        "monthTitle": "Marzo",
         "audioData": [
           {
-            "date": "2014-10-04",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/77457166/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-19%2Fa88b2c90-74dd-c54c-7dfd-b057fb974eaa.mp3",
-            "audioTitle": "Mi Obediencia a Dios",
-            "episodeNumber": 31,
-            "description": "La obediencia a Dios se demuestra al escuchar su Palabra y responder a su llamado. Con ejemplos como Noé, el mensaje anima a confiar aun cuando el camino no parezca fácil y a compartir el evangelio con fidelidad.",
-            "slug": "31-mi-obediencia-a-dios",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/31-Mi-Obediencia-a-Dios-e2aqaae",
-            "duration": "00:54:23"
+            "date": "2014-03-01",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61903223/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2Fe6c5c867-12c4-ecc6-e4f0-280972f8c3e4.mp3",
+            "audioTitle": "Los Hijos Pródigos",
+            "episodeNumber": 9,
+            "season": 1,
+            "description": "La parábola del hijo pródigo enseña acerca de la desobediencia, el arrepentimiento y el perdón. El episodio recuerda que Dios recibe con misericordia a quienes regresan a Él y nos anima a valorar a nuestra familia y al Padre celestial.",
+            "slug": "9-los-hijos-prodigos",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/09-Los-Hijos-Prodigos-e1rvktn",
+            "duration": "00:55:00"
           },
           {
-            "date": "2014-10-11",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/77614780/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-23%2F841386ba-d05e-e5ae-f0f9-69a14d49feff.mp3",
-            "audioTitle": "La Fidelidad",
-            "episodeNumber": 32,
-            "description": "Una enseñanza sobre permanecer fiel a Dios después de recibir a Jesucristo como Salvador. El episodio invita a examinar el crecimiento espiritual, perseverar en la fe y demostrar la fidelidad mediante la obediencia, el servicio y una vida constante con Cristo.",
-            "slug": "32-la-fidelidad",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/32-La-Fidelidad-e2av47s",
-            "duration": "00:53:44"
+            "date": "2014-03-08",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61903467/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-8%2F7bba5761-8ec6-4548-bd15-98971077ba66.mp3",
+            "audioTitle": "Sobre los Ángeles",
+            "episodeNumber": 10,
+            "season": 1,
+            "description": "Una conversación bíblica sobre los ángeles, sus funciones como mensajeros y servidores de Dios, y la protección que Él puede brindar por medio de ellos. El mensaje recalca que la adoración y la confianza pertenecen solamente a Dios.",
+            "slug": "10-sobre-los-angeles",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/10-Sobre-Los-ngeles-e1rvl5b",
+            "duration": "00:55:20"
           },
           {
-            "date": "2014-10-18",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124407892/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F3e331751-3fc8-8a2e-d283-f48c88c9ce57.mp3",
-            "audioTitle": "La Puerta Angosta",
-            "episodeNumber": 33,
-            "description": "El pastor Ariel explica qué significa entrar por la puerta angosta y por qué Jesucristo es el único camino hacia la salvación. Una reflexión sobre el arrepentimiento, la fe y la decisión de seguir a Cristo.",
-            "slug": "33-la-puerta-angosta",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/33-La-Puerta-Angosta-e3nj4kk",
-            "duration": "00:54:03"
+            "date": "2014-03-15",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61950815/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F18617697-9a13-0f24-968d-81c58e216208.mp3",
+            "audioTitle": "Pecado y la Promesa de Salvación",
+            "episodeNumber": 11,
+            "season": 1,
+            "description": "Continuando el tema de los ángeles, el pastor explica que ningún ángel ni ser humano puede librarnos del pecado. La promesa de salvación viene de Dios por medio de la sangre de Jesucristo, y se recibe con fe, arrepentimiento y obediencia.",
+            "slug": "11-pecado-y-la-promesa-de-salvacion",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/11-Pecado-y-La-Promesa-de-Salvacion-e1s13cv",
+            "duration": "00:53:43"
           },
           {
-            "date": "2014-10-25",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124408848/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F15aa5106-88c8-3b90-4fbd-ecb77797749f.mp3",
-            "audioTitle": "Dios Es Amor",
-            "episodeNumber": 34,
-            "description": "Una reflexión sobre el amor de Dios y el mandamiento de amar y perdonar a los demás. El pastor Ariel explica cómo el amor, la oración y la fe en Jesucristo transforman la vida del creyente.",
-            "slug": "34-dios-es-amor",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/34-Dios-Es-Amor-e3nj5ig",
-            "duration": "00:41:08"
+            "date": "2014-03-22",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61951024/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fb8c9c1a3-8741-aa83-1aef-ae1369b1ba4f.mp3",
+            "audioTitle": "El Salvador del Mundo",
+            "episodeNumber": 12,
+            "season": 1,
+            "description": "Un llamado a poner los ojos en Jesús, autor y consumador de la fe y Salvador del mundo. El episodio recuerda su sacrificio en la cruz, su sangre derramada por el pecado y la esperanza de vida eterna para quienes creen en Él.",
+            "slug": "12-el-salvador-del-mundo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/12-El-Salvador-del-mundo-e1s13jg",
+            "duration": "00:53:27"
+          },
+          {
+            "date": "2014-03-29",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61951260/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F030dde5d-7208-1fa0-0e6c-b993430ffd48.mp3",
+            "audioTitle": "El Gran Amor de Dios",
+            "episodeNumber": 13,
+            "season": 1,
+            "description": "Este mensaje presenta el gran amor de Dios como una gracia que supera el entendimiento humano. Una reflexión sobre Jesucristo, el perdón, la salvación y la invitación de Dios a vivir en comunión con Él.",
+            "slug": "13-el-gran-amor-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/13-El-Gran-Amor-de-Dios-e1s13qs",
+            "duration": "00:45:14"
           }
-        ],
-        "monthTitle": "Octubre"
+        ]
       },
-      "diciembre": {
+      "abril": {
+        "monthTitle": "Abril",
         "audioData": [
           {
-            "date": "2014-12-06",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409443/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F745c43ce-b9a2-5b49-5f6f-b1c887de5d04.mp3",
-            "audioTitle": "¿Quién Es Jesucristo?",
-            "episodeNumber": 40,
-            "description": "El pastor Ariel examina quién es Jesucristo a través de sus diferentes títulos bíblicos: el Hijo de Dios, la luz del mundo, el camino, la verdad y la vida, el buen pastor y el Salvador. Una reflexión sobre su divinidad, sus enseñanzas y su papel central en la salvación.",
-            "slug": "40-quien-es-jesucristo",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/40-Quin-Es-Jesucristo-e3nj653",
-            "duration": "00:53:51"
+            "date": "2014-04-05",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957142/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fe752c0db-d5fb-fc5c-756e-4ddb8ce29302.mp3",
+            "audioTitle": "La Obediencia",
+            "episodeNumber": 14,
+            "season": 1,
+            "description": "Una enseñanza sobre la fe, la obediencia y la razón por la que Jesucristo murió y resucitó. El episodio invita a seguir la voluntad de Dios, confiar en su gracia y reconocer a Jesús como el único camino al Padre.",
+            "slug": "14-la-obediencia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/14-La-Obediencia-e1s19im",
+            "duration": "00:54:10"
+          },
+          {
+            "date": "2014-04-12",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957312/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F5cc0f594-9d7a-fc0d-089d-9884b7082eec.mp3",
+            "audioTitle": "Moisés",
+            "episodeNumber": 15,
+            "season": 1,
+            "description": "La vida de Moisés muestra cómo Dios puede proteger, llamar y usar a una persona para cumplir un propósito mayor. El mensaje recorre su nacimiento y misión, y destaca la oración, la fe y la obediencia frente a situaciones difíciles.",
+            "slug": "15-moises",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/15-Moiss-e1s19o0",
+            "duration": "00:55:31"
+          },
+          {
+            "date": "2014-04-19",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61957821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F7751b948-9bc6-1081-4c5c-2576fd6bc7c6.mp3",
+            "audioTitle": "Resurrección",
+            "episodeNumber": 16,
+            "season": 1,
+            "description": "Un mensaje especial sobre la resurrección de Jesucristo y la esperanza que ofrece a todo creyente. Porque Cristo venció la muerte, quienes confían en Él reciben la promesa de resurrección y vida eterna en la presencia de Dios.",
+            "slug": "16-resurreccion",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/16-La-Resurreccin-e1s1a7t",
+            "duration": "00:54:29"
+          },
+          {
+            "date": "2014-04-26",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960592/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fbd1435ae-7cba-f1e9-c7ac-aaf1d671a76e.mp3",
+            "audioTitle": "Tropiezos en la Vida",
+            "episodeNumber": 17,
+            "season": 1,
+            "description": "Todos encontramos tropiezos, pruebas y tentaciones en nuestro camino. Este episodio enseña cómo enfrentarlos con oración, la Palabra de Dios y confianza en Jesucristo, recordando que Dios no abandona a quienes le buscan.",
+            "slug": "17-tropiezos-en-la-vida",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/17-Tropiezos-en-la-Vida-e1s1cug",
+            "duration": "00:55:33"
           }
-        ],
-        "monthTitle": "Diciembre"
+        ]
       },
-      "noviembre": {
+      "mayo": {
+        "monthTitle": "Mayo",
         "audioData": [
           {
-            "date": "2014-11-01",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124408946/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fd7fde915-d3c4-d511-3b90-ebbfa225dbc4.mp3",
-            "audioTitle": "¿Qué Es la Fe?",
-            "episodeNumber": 35,
-            "description": "¿Qué significa realmente tener fe? El pastor Ariel distingue entre la confianza humana y la verdadera fe en Dios, reflexionando sobre la oración, las promesas de Cristo y la seguridad de creer en lo que no podemos ver.",
-            "slug": "35-que-es-la-fe",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/35-Qu-Es-la-Fe-e3nj5li",
-            "duration": "00:51:09"
+            "date": "2014-05-10",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960699/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Feda923da-5a61-9b97-7538-08df4f2e8172.mp3",
+            "audioTitle": "El Amor de una Madre (1)",
+            "episodeNumber": 18,
+            "season": 1,
+            "description": "Primera parte de un homenaje al amor, el sacrificio y la dedicación de las madres. El pastor Ariel relaciona ese amor protector con la compasión de Dios y anima a los hijos a honrar y agradecer a sus madres.",
+            "slug": "18-el-amor-de-una-madre-1",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/18-El-Amor-de-una-Madre-1-e1s1d1r",
+            "duration": "00:51:26"
           },
           {
-            "date": "2014-11-08",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409019/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fb6f90a70-a93d-1b1f-b095-4081aef98453.mp3",
-            "audioTitle": "En Aquel Día",
-            "episodeNumber": 36,
-            "description": "El pastor Ariel reflexiona sobre las palabras de Jesús: «En aquel día no me preguntaréis nada». Este episodio explica la venida del Espíritu Santo, la unidad del creyente con Cristo y cómo vivir guiados por la fe según las Escrituras.",
-            "slug": "36-en-aquel-dia",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/36-En-Aquel-Da-e3nj5nr",
-            "duration": "00:50:09"
+            "date": "2014-05-17",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61960931/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2Fc1cdce9e-010e-9d44-ed8f-a285abbcafcb.mp3",
+            "audioTitle": "El Amor de una Madre (2)",
+            "episodeNumber": 19,
+            "season": 1,
+            "description": "La segunda parte continúa celebrando el valor espiritual y familiar de una madre. Mediante recuerdos y enseñanzas bíblicas, el episodio destaca su entrega, sus consejos y la importancia de reconocer su amor mientras está presente.",
+            "slug": "19-el-amor-de-una-madre-2",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/19-El-Amor-de-una-Madre-2-e1s1d93",
+            "duration": "00:45:27"
           },
           {
-            "date": "2014-11-15",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fcd687ac9-7c95-8107-9c1c-d08247a974f5.mp3",
-            "audioTitle": "¿Quién Es Mi Verdadero Amor?",
-            "episodeNumber": 37,
-            "description": "El pastor Ariel reflexiona sobre quién debe ocupar el primer lugar en nuestro corazón y advierte sobre el peligro de crear un dios conforme a nuestros propios deseos. El episodio presenta a Jesucristo como la mayor expresión del amor de Dios y el único camino hacia la salvación.",
-            "slug": "37-quien-es-mi-verdadero-amor",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/37-Quin-Es-Mi-Verdadero-Amor-e3nj60p",
-            "duration": "00:52:32"
+            "date": "2014-05-24",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/61961033/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-9%2F5a04aca3-6eb1-0de8-da67-7fd1bc8f4fd3.mp3",
+            "audioTitle": "¿Por Qué Debería Pedir Perdón?",
+            "episodeNumber": 20,
+            "season": 1,
+            "description": "Pedir perdón puede ser difícil, pero es esencial para la reconciliación con Dios y con los demás. El mensaje habla del arrepentimiento, la humildad y la necesidad de perdonar de la misma manera en que deseamos ser perdonados.",
+            "slug": "20-por-que-deberia-pedir-perdon",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/20-Por-qu-Debera-Pedir-Perdn-e1s1dc9",
+            "duration": "00:52:10"
           },
           {
-            "date": "2014-11-22",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409362/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fde006f01-6bca-02b3-987c-1d9ca9badf59.mp3",
-            "audioTitle": "Dios Primero en Todo",
-            "episodeNumber": 38,
-            "description": "El pastor Ariel reflexiona sobre la importancia de buscar primero el reino de Dios y obedecer las enseñanzas de Jesucristo. El episodio aborda el costo de seguir a Cristo, la necesidad de poner a Dios por encima de todo y el significado de vivir guiados por el Espíritu Santo.",
-            "slug": "38-dios-primero-en-todo",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/38-Dios-Primero-en-Todo-e3nj62i",
-            "duration": "00:51:50"
-          },
-          {
-            "date": "2014-11-29",
-            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409411/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fb6bba930-302f-3e76-f0d5-9e96bb9221c6.mp3",
-            "audioTitle": "Ser un Siervo de Dios",
-            "episodeNumber": 39,
-            "description": "¿Qué significa ser un verdadero siervo de Dios? El pastor Ariel reflexiona sobre la obediencia, la humildad y la entrega al servicio de Jesucristo, explicando cómo una vida unida a Él puede producir frutos para la gloria de Dios.",
-            "slug": "39-ser-un-siervo-de-dios",
-            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/39-Ser-un-Siervo-de-Dios-e3nj643",
-            "duration": "00:44:11"
+            "date": "2014-05-31",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435117/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2F4a25d5ed-fd99-f5b1-1dea-34874f5549a5.mp3",
+            "audioTitle": "Seguir a Jesucristo",
+            "episodeNumber": 21,
+            "season": 1,
+            "description": "¿Qué significa realmente seguir a Jesucristo? Este episodio presenta el discipulado como una vida de fe, obediencia y entrega, en la que la Palabra de Dios alimenta el espíritu y orienta nuestras decisiones diarias.",
+            "slug": "21-seguir-a-jesucristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/21-Seguir-a-Jesucristo-e1sfsbd",
+            "duration": "00:54:59"
           }
-        ],
-        "monthTitle": "Noviembre"
+        ]
+      },
+      "junio": {
+        "monthTitle": "Junio",
+        "audioData": [
+          {
+            "date": "2014-06-07",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435650/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2Fce92f6ec-1817-b6a5-a60e-ba84eb4f67c9.mp3",
+            "audioTitle": "Padre Celestial, Padre Terrenal",
+            "episodeNumber": 22,
+            "season": 1,
+            "description": "La parábola del hijo pródigo sirve para comparar el cuidado de un padre terrenal con la misericordia del Padre celestial. Una reflexión sobre la desobediencia, el regreso a Dios, el perdón y el amor que restaura al hijo arrepentido.",
+            "slug": "22-padre-celestial-padre-terrenal",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/22-Padre-Celestial--Padre-Terrenal-e1sfss2",
+            "duration": "00:54:32"
+          }
+        ]
+      },
+      "julio": {
+        "monthTitle": "Julio",
+        "audioData": [
+          {
+            "date": "2014-07-19",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62435809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-19%2F4fa216c1-2891-7213-d7f5-f40ee1280731.mp3",
+            "audioTitle": "¿Qué Significa Creer en Dios?",
+            "episodeNumber": 23,
+            "season": 1,
+            "description": "Creer en Dios es más que pronunciar su nombre: implica escuchar sus palabras y ponerlas en práctica. A partir de la casa edificada sobre la roca, el episodio invita a construir la vida sobre Jesucristo, la fe y la obediencia.",
+            "slug": "23-que-significa-creer-en-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/23-Qu-Significa-Creer-en-Dios-e1sft11",
+            "duration": "00:53:23"
+          }
+        ]
+      },
+      "agosto": {
+        "monthTitle": "Agosto",
+        "audioData": [
+          {
+            "date": "2014-08-02",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523580/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2F4a4973e3-f3cb-5ee2-911b-a87077da36d8.mp3",
+            "audioTitle": "¿Cómo Reconozco al Espíritu?",
+            "episodeNumber": 24,
+            "season": 1,
+            "description": "Una enseñanza sobre la necesidad de conocer a Jesucristo y nacer de nuevo por el Espíritu Santo. El mensaje ofrece claves bíblicas para reconocer la obra del Espíritu, recibir salvación y vivir con la esperanza de la vida eterna.",
+            "slug": "24-como-reconozco-al-espiritu",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/24-Cmo-Reconozco-al-Espritu-e1siins",
+            "duration": "00:52:40"
+          },
+          {
+            "date": "2014-08-09",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523728/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fd16a08c6-6ed9-bae7-4f42-537a8d437669.mp3",
+            "audioTitle": "Para la Gloria de Dios",
+            "episodeNumber": 25,
+            "season": 1,
+            "description": "Todo lo que hacemos debe buscar la gloria de Dios y no la nuestra. Este episodio examina enseñanzas de Jesús que pueden resultar difíciles, pero que llaman al creyente a amar a Dios primero, apartarse del mundo y vivir para agradarle.",
+            "slug": "25-para-la-gloria-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/25-Para-la-Gloria-de-Dios-e1siisg",
+            "duration": "00:53:48"
+          },
+          {
+            "date": "2014-08-16",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62523906/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2F9636bc16-dcba-0aaa-7fe7-f5b26e480b61.mp3",
+            "audioTitle": "El Amor Verdadero",
+            "episodeNumber": 26,
+            "season": 1,
+            "description": "El amor verdadero no depende de condiciones ni de lo que recibimos a cambio. El pastor Ariel contrasta el amor humano con el amor perfecto de Dios, manifestado en Jesucristo y en su sacrificio por la salvación del mundo.",
+            "slug": "26-el-amor-verdadero",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/26-El-Amor-Verdadero-e1sij22",
+            "duration": "00:56:54"
+          },
+          {
+            "date": "2014-08-23",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62524827/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fb4968c01-e273-fbfd-025b-7cbccd3bb2b5.mp3",
+            "audioTitle": "Puestos los Ojos en Jesús",
+            "episodeNumber": 27,
+            "season": 1,
+            "description": "Basado en Hebreos, este mensaje anima a dejar el peso del pecado y correr con paciencia la carrera de la fe. Poner los ojos en Jesús ayuda al creyente a perseverar, superar distracciones y recordar quién es el autor y consumador de la fe.",
+            "slug": "27-puestos-los-ojos-en-jesus",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/27-Puestos-Los-Ojos-en-Jess-e1sijur",
+            "duration": "00:51:23"
+          },
+          {
+            "date": "2014-08-30",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62524999/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fed433988-d20e-c0c6-c631-b0aeb0218196.mp3",
+            "audioTitle": "Leer la Biblia",
+            "episodeNumber": 28,
+            "season": 1,
+            "description": "Una invitación a leer y estudiar la Biblia para conocer a Dios, fortalecer la fe y distinguir la verdad. El episodio explica por qué la confianza espiritual no debe descansar solamente en personas o cosas, sino en la Palabra del Señor.",
+            "slug": "28-leer-la-biblia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/28-Leer-la-Biblia-e1sik47",
+            "duration": "00:50:00"
+          }
+        ]
       },
       "septiembre": {
+        "monthTitle": "Septiembre",
         "audioData": [
           {
             "date": "2014-09-06",
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62525168/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2F7cc71844-e522-8d2f-9f44-717543a953ab.mp3",
             "audioTitle": "Un Siervo de Dios",
             "episodeNumber": 29,
+            "season": 1,
             "description": "¿Qué significa ser un siervo de Dios? Este mensaje habla de servicio, humildad, fidelidad y sometimiento voluntario a la voluntad divina, recordando que el verdadero siervo busca honrar a Jesucristo y servir también a los demás.",
             "slug": "29-un-siervo-de-dios",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/29-Un-Siervo-de-Dios-e1sik9g",
@@ -469,13 +384,592 @@
             "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/62525582/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-21%2Fb73861f6-2a32-333d-c338-f19437e917d3.mp3",
             "audioTitle": "Un Hombre Rico",
             "episodeNumber": 30,
+            "season": 1,
             "description": "Una reflexión sobre las riquezas terrenales y la riqueza espiritual que solamente Dios puede dar. El episodio invita a no poner la confianza en los bienes materiales, sino a entregar el corazón a Jesucristo y buscar el tesoro de la vida eterna.",
             "slug": "30-un-hombre-rico",
             "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/30-Un-Hombre-Rico-e1sikme",
             "duration": "00:49:01"
           }
-        ],
-        "monthTitle": "Septiembre"
+        ]
+      },
+      "octubre": {
+        "monthTitle": "Octubre",
+        "audioData": [
+          {
+            "date": "2014-10-04",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/77457166/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-19%2Fa88b2c90-74dd-c54c-7dfd-b057fb974eaa.mp3",
+            "audioTitle": "Mi Obediencia a Dios",
+            "episodeNumber": 31,
+            "season": 1,
+            "description": "La obediencia a Dios se demuestra al escuchar su Palabra y responder a su llamado. Con ejemplos como Noé, el mensaje anima a confiar aun cuando el camino no parezca fácil y a compartir el evangelio con fidelidad.",
+            "slug": "31-mi-obediencia-a-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/31-Mi-Obediencia-a-Dios-e2aqaae",
+            "duration": "00:54:23"
+          },
+          {
+            "date": "2014-10-11",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/77614780/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-23%2F841386ba-d05e-e5ae-f0f9-69a14d49feff.mp3",
+            "audioTitle": "La Fidelidad",
+            "episodeNumber": 32,
+            "season": 1,
+            "description": "Una enseñanza sobre permanecer fiel a Dios después de recibir a Jesucristo como Salvador. El episodio invita a examinar el crecimiento espiritual, perseverar en la fe y demostrar la fidelidad mediante la obediencia, el servicio y una vida constante con Cristo.",
+            "slug": "32-la-fidelidad",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/32-La-Fidelidad-e2av47s",
+            "duration": "00:53:44"
+          },
+          {
+            "date": "2014-10-18",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124407892/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F3e331751-3fc8-8a2e-d283-f48c88c9ce57.mp3",
+            "audioTitle": "La Puerta Angosta",
+            "episodeNumber": 33,
+            "season": 1,
+            "description": "El pastor Ariel explica qué significa entrar por la puerta angosta y por qué Jesucristo es el único camino hacia la salvación. Una reflexión sobre el arrepentimiento, la fe y la decisión de seguir a Cristo.",
+            "slug": "33-la-puerta-angosta",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/33-La-Puerta-Angosta-e3nj4kk",
+            "duration": "00:54:03"
+          },
+          {
+            "date": "2014-10-25",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124408848/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F15aa5106-88c8-3b90-4fbd-ecb77797749f.mp3",
+            "audioTitle": "Dios Es Amor",
+            "episodeNumber": 34,
+            "season": 1,
+            "description": "Una reflexión sobre el amor de Dios y el mandamiento de amar y perdonar a los demás. El pastor Ariel explica cómo el amor, la oración y la fe en Jesucristo transforman la vida del creyente.",
+            "slug": "34-dios-es-amor",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/34-Dios-Es-Amor-e3nj5ig",
+            "duration": "00:41:08"
+          }
+        ]
+      },
+      "noviembre": {
+        "monthTitle": "Noviembre",
+        "audioData": [
+          {
+            "date": "2014-11-01",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124408946/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fd7fde915-d3c4-d511-3b90-ebbfa225dbc4.mp3",
+            "audioTitle": "¿Qué Es la Fe?",
+            "episodeNumber": 35,
+            "season": 1,
+            "description": "¿Qué significa realmente tener fe? El pastor Ariel distingue entre la confianza humana y la verdadera fe en Dios, reflexionando sobre la oración, las promesas de Cristo y la seguridad de creer en lo que no podemos ver.",
+            "slug": "35-que-es-la-fe",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/35-Qu-Es-la-Fe-e3nj5li",
+            "duration": "00:51:09"
+          },
+          {
+            "date": "2014-11-08",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409019/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fb6f90a70-a93d-1b1f-b095-4081aef98453.mp3",
+            "audioTitle": "En Aquel Día",
+            "episodeNumber": 36,
+            "season": 1,
+            "description": "El pastor Ariel reflexiona sobre las palabras de Jesús: «En aquel día no me preguntaréis nada». Este episodio explica la venida del Espíritu Santo, la unidad del creyente con Cristo y cómo vivir guiados por la fe según las Escrituras.",
+            "slug": "36-en-aquel-dia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/36-En-Aquel-Da-e3nj5nr",
+            "duration": "00:50:09"
+          },
+          {
+            "date": "2014-11-15",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fcd687ac9-7c95-8107-9c1c-d08247a974f5.mp3",
+            "audioTitle": "¿Quién Es Mi Verdadero Amor?",
+            "episodeNumber": 37,
+            "season": 1,
+            "description": "El pastor Ariel reflexiona sobre quién debe ocupar el primer lugar en nuestro corazón y advierte sobre el peligro de crear un dios conforme a nuestros propios deseos. El episodio presenta a Jesucristo como la mayor expresión del amor de Dios y el único camino hacia la salvación.",
+            "slug": "37-quien-es-mi-verdadero-amor",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/37-Quin-Es-Mi-Verdadero-Amor-e3nj60p",
+            "duration": "00:52:32"
+          },
+          {
+            "date": "2014-11-22",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409362/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fde006f01-6bca-02b3-987c-1d9ca9badf59.mp3",
+            "audioTitle": "Dios Primero en Todo",
+            "episodeNumber": 38,
+            "season": 1,
+            "description": "El pastor Ariel reflexiona sobre la importancia de buscar primero el reino de Dios y obedecer las enseñanzas de Jesucristo. El episodio aborda el costo de seguir a Cristo, la necesidad de poner a Dios por encima de todo y el significado de vivir guiados por el Espíritu Santo.",
+            "slug": "38-dios-primero-en-todo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/38-Dios-Primero-en-Todo-e3nj62i",
+            "duration": "00:51:50"
+          },
+          {
+            "date": "2014-11-29",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409411/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2Fb6bba930-302f-3e76-f0d5-9e96bb9221c6.mp3",
+            "audioTitle": "Ser un Siervo de Dios",
+            "episodeNumber": 39,
+            "season": 1,
+            "description": "¿Qué significa ser un verdadero siervo de Dios? El pastor Ariel reflexiona sobre la obediencia, la humildad y la entrega al servicio de Jesucristo, explicando cómo una vida unida a Él puede producir frutos para la gloria de Dios.",
+            "slug": "39-ser-un-siervo-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/39-Ser-un-Siervo-de-Dios-e3nj643",
+            "duration": "00:44:11"
+          }
+        ]
+      },
+      "diciembre": {
+        "monthTitle": "Diciembre",
+        "audioData": [
+          {
+            "date": "2014-12-06",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124409443/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-18%2F745c43ce-b9a2-5b49-5f6f-b1c887de5d04.mp3",
+            "audioTitle": "¿Quién Es Jesucristo?",
+            "episodeNumber": 40,
+            "season": 1,
+            "description": "El pastor Ariel examina quién es Jesucristo a través de sus diferentes títulos bíblicos: el Hijo de Dios, la luz del mundo, el camino, la verdad y la vida, el buen pastor y el Salvador. Una reflexión sobre su divinidad, sus enseñanzas y su papel central en la salvación.",
+            "slug": "40-quien-es-jesucristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/40-Quin-Es-Jesucristo-e3nj653",
+            "duration": "00:53:51"
+          }
+        ]
+      }
+    }
+  },
+  "seasonTwo": {
+    "seasonNumber": 2,
+    "seasonTitle": "Temporada 2",
+    "allMonths": [
+      "enero",
+      "febrero",
+      "marzo",
+      "abril",
+      "mayo",
+      "junio",
+      "julio",
+      "agosto",
+      "septiembre",
+      "octubre",
+      "noviembre",
+      "diciembre"
+    ],
+    "monthsData": {
+      "enero": {
+        "monthTitle": "Enero",
+        "audioData": [
+          {
+            "date": "2015-08-01",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124455446/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fd83a234d-5092-2297-3979-9b29bf1a185c.mp3",
+            "audioTitle": "Dos Mujeres que Ungieron a Jesús",
+            "episodeNumber": 41,
+            "season": 2,
+            "description": "El pastor Ariel compara los relatos bíblicos de dos mujeres que ungieron a Jesucristo: la mujer pecadora en casa de Simón y María de Betania. El mensaje reflexiona sobre el perdón, la adoración y el amor que nace al recibir la misericordia de Cristo.",
+            "slug": "41-dos-mujeres-que-ungieron-a-jesus",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/41-Dos-Mujeres-que-Ungieron-a-Jess-e3nkj2m",
+            "duration": "00:47:41"
+          },
+          {
+            "date": "2016-01-02",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124457119/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fc7aafa5c-f76c-3a8f-b730-215d3373b1fc.mp3",
+            "audioTitle": "¿A Dónde Voy a Ir?",
+            "episodeNumber": 42,
+            "season": 2,
+            "description": "Una reflexión sobre el destino eterno del ser humano y la importancia de prepararnos espiritualmente para el final de nuestra vida terrenal. Mediante la historia del rico y Lázaro, el pastor Ariel enseña que la vida eterna se encuentra al nacer de nuevo y recibir a Jesucristo.",
+            "slug": "42-a-donde-voy-a-ir",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/42-A-Dnde-Voy-a-Ir-e3nkkmv",
+            "duration": "00:52:47"
+          },
+          {
+            "date": "2015-10-03",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124458764/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fd80c26ca-9004-d194-f2e7-f431bd71547d.mp3",
+            "audioTitle": "La Resurrección",
+            "episodeNumber": 43,
+            "season": 2,
+            "description": "Este mensaje explica el significado de la resurrección de Jesucristo y su victoria sobre el pecado y la muerte. El episodio invita a comenzar una nueva vida en Cristo y confiar en su promesa de resurrección y vida eterna.",
+            "slug": "43-la-resurreccion",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/43-La-Resurreccin-e3nkmac",
+            "duration": "00:54:45"
+          }
+        ]
+      },
+      "febrero": {
+        "monthTitle": "Febrero",
+        "audioData": [
+          {
+            "date": "2015-07-04",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124458792/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F5874da65-0013-fbdb-da33-28f17efe5587.mp3",
+            "audioTitle": "Los Ángeles",
+            "episodeNumber": 44,
+            "season": 2,
+            "description": "Una enseñanza bíblica sobre los ángeles, su servicio a Dios y la manera en que son enviados para cumplir sus propósitos. El pastor Ariel recuerda que la adoración pertenece solamente a Dios y que la esperanza de salvación se encuentra en Jesucristo.",
+            "slug": "44-los-angeles",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/44-Los-ngeles-e3nkmb8",
+            "duration": "00:55:22"
+          },
+          {
+            "date": "2016-03-05",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124458865/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F29821ddb-42d4-dcbd-0156-59a72d71f5d5.mp3",
+            "audioTitle": "La Fe que Sirve",
+            "episodeNumber": 45,
+            "season": 2,
+            "description": "El pastor Ariel distingue la fe humana, que depende de las circunstancias, de la verdadera fe puesta en Jesucristo. Mediante las parábolas del sembrador y del trigo y la cizaña, anima a recibir la Palabra de Dios y producir frutos espirituales.",
+            "slug": "45-la-fe-que-sirve",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/45-La-Fe-que-Sirve-e3nkmdh",
+            "duration": "00:39:55"
+          },
+          {
+            "date": "2015-09-05",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460636/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F55822392-da1d-f428-0822-9b9598234720.mp3",
+            "audioTitle": "No Peques Más",
+            "episodeNumber": 46,
+            "season": 2,
+            "description": "La historia de la mujer sorprendida en adulterio muestra la misericordia de Jesucristo frente al pecado y la condenación humana. El mensaje nos llama a reconocer nuestros propios pecados, recibir el perdón de Dios y abandonar aquello que nos aparta de Él.",
+            "slug": "46-no-peques-mas",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/46-No-Peques-Ms-e3nko4s",
+            "duration": "00:53:49"
+          }
+        ]
+      },
+      "marzo": {
+        "monthTitle": "Marzo",
+        "audioData": [
+          {
+            "date": "2015-12-05",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460675/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fd5326990-ed51-82ec-4fb3-b4d9e596bff8.mp3",
+            "audioTitle": "La Cruz de Cristo",
+            "episodeNumber": 47,
+            "season": 2,
+            "description": "Una reflexión sobre el inmenso precio que Jesucristo pagó en la cruz para obtener el perdón de nuestros pecados. El pastor Ariel enseña que la salvación no depende de nuestras obras, sino del sacrificio, la sangre y la resurrección de Cristo.",
+            "slug": "47-la-cruz-de-cristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/47-La-Cruz-de-Cristo-e3nko63",
+            "duration": "00:52:52"
+          },
+          {
+            "date": "2016-02-06",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460765/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fc77a5fbd-2636-9928-73cd-830d9dc0cc17.mp3",
+            "audioTitle": "La Felicidad",
+            "episodeNumber": 48,
+            "season": 2,
+            "description": "Este episodio examina las distintas maneras en que las personas buscan la felicidad en el dinero, las relaciones y los logros personales. El mensaje enseña que la felicidad verdadera y duradera se encuentra en el amor y la presencia de Jesucristo.",
+            "slug": "48-la-felicidad",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/48-La-Felicidad-e3nko8t",
+            "duration": "00:54:03"
+          },
+          {
+            "date": "2015-11-07",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460788/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F30a0d06a-676f-8eb3-37a0-dcc0936e610e.mp3",
+            "audioTitle": "Un Siervo de Dios",
+            "episodeNumber": 49,
+            "season": 2,
+            "description": "¿Qué significa ser un siervo de Dios? El pastor Ariel habla de humildad, obediencia, fidelidad y entrega, recordando que el verdadero siervo permanece unido a Jesucristo y permite que el Espíritu Santo produzca fruto en su vida.",
+            "slug": "49-un-siervo-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/49-Un-Siervo-de-Dios-e3nko9k",
+            "duration": "00:51:28"
+          }
+        ]
+      },
+      "abril": {
+        "monthTitle": "Abril",
+        "audioData": [
+          {
+            "date": "2015-08-08",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460811/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F15bc8b0f-967c-6f72-ac5d-5c97ed49d7a1.mp3",
+            "audioTitle": "La Muerte de Lázaro",
+            "episodeNumber": 50,
+            "season": 2,
+            "description": "El relato de la muerte y resurrección de Lázaro revela el poder de Jesucristo sobre la muerte y la importancia de confiar en los planes de Dios. El episodio recuerda que quienes creen en Cristo reciben la promesa de una vida que continúa eternamente en su presencia.",
+            "slug": "50-la-muerte-de-lazaro",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/50-La-Muerte-de-Lzaro-e3nkoab",
+            "duration": "00:49:57"
+          },
+          {
+            "date": "2016-01-09",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124460852/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F718a6cad-6a90-cb78-5b31-da36a4f3c4d2.mp3",
+            "audioTitle": "Obediencia a Dios",
+            "episodeNumber": 51,
+            "season": 2,
+            "description": "La obediencia de Jesucristo hasta la cruz sirve como el mayor ejemplo de entrega a la voluntad de Dios. El mensaje invita a abandonar la antigua manera de vivir, seguir la dirección del Espíritu Santo y demostrar una fe transformada por medio de nuestras decisiones.",
+            "slug": "51-obediencia-a-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/51-Obediencia-a-Dios-e3nkobk",
+            "duration": "00:51:33"
+          },
+          {
+            "date": "2015-10-10",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461099/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F4cea0863-11fb-32ce-b531-7a11ddd5d1e2.mp3",
+            "audioTitle": "Sin Dios No Hay Amor",
+            "episodeNumber": 52,
+            "season": 2,
+            "description": "El pastor Ariel explica que el amor verdadero tiene su origen en Dios y no debe confundirse con la atracción o los sentimientos pasajeros. El sacrificio de Jesucristo demuestra un amor eterno e incondicional que ofrece perdón y salvación.",
+            "slug": "52-sin-dios-no-hay-amor",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/52-Sin-Dios-No-Hay-Amor-e3nkojb",
+            "duration": "00:57:43"
+          }
+        ]
+      },
+      "mayo": {
+        "monthTitle": "Mayo",
+        "audioData": [
+          {
+            "date": "2015-07-11",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461116/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F5113779d-0769-4eed-e14c-4d89f1987f61.mp3",
+            "audioTitle": "El Arrepentimiento",
+            "episodeNumber": 53,
+            "season": 2,
+            "description": "Una enseñanza sobre el verdadero arrepentimiento, que no consiste solamente en lamentar nuestros errores, sino en abandonar conscientemente el pecado. El mensaje invita a pedir perdón, nacer de nuevo y comenzar una relación permanente con Jesucristo.",
+            "slug": "53-el-arrepentimiento",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/53-El-Arrepentimiento-e3nkojs",
+            "duration": "00:53:03"
+          },
+          {
+            "date": "2015-09-12",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461182/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F346ecbdf-efe6-20f4-949f-7f43538d6cf1.mp3",
+            "audioTitle": "Ausente de la Luz",
+            "episodeNumber": 54,
+            "season": 2,
+            "description": "Este episodio contrasta la luz de Jesucristo con la oscuridad espiritual que existe cuando vivimos apartados de Dios. El pastor Ariel presenta los distintos títulos de Jesús y recuerda que Él es la luz, el camino, la verdad y la vida.",
+            "slug": "54-ausente-de-la-luz",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/54-Ausente-de-la-Luz-e3nkolu",
+            "duration": "00:53:15"
+          },
+          {
+            "date": "2015-12-12",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461217/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F6c090982-4c85-f3d5-ea49-9b366cc623c8.mp3",
+            "audioTitle": "Una Mujer Sorprendida en Adulterio",
+            "episodeNumber": 55,
+            "season": 2,
+            "description": "El relato de la mujer sorprendida en adulterio muestra la diferencia entre la condenación humana y la misericordia de Jesucristo. El mensaje enseña que todos hemos pecado, necesitamos perdón y debemos acercarnos a los demás con amor en lugar de juzgarlos.",
+            "slug": "55-una-mujer-sorprendida-en-adulterio",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/55-Una-Mujer-Sorprendida-en-Adulterio-e3nkon1",
+            "duration": "00:52:14"
+          }
+        ]
+      },
+      "junio": {
+        "monthTitle": "Junio",
+        "audioData": [
+          {
+            "date": "2016-02-13",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461132/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fa423f1a5-b530-1b47-3f39-95f7938ffc7b.mp3",
+            "audioTitle": "La Obediencia",
+            "episodeNumber": 56,
+            "season": 2,
+            "description": "Una reflexión sobre la importancia de obedecer a Dios aun cuando hacerlo cambie nuestros planes o provoque el rechazo de otras personas. Jesucristo sirve como el mayor ejemplo de obediencia, entrega y fidelidad a la voluntad del Padre.",
+            "slug": "56-la-obediencia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/56-La-Obediencia-e3nkokc",
+            "duration": "00:54:07"
+          },
+          {
+            "date": "2015-11-14",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461863/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F11561025-8b7e-68fb-6f4c-55a4bd43790d.mp3",
+            "audioTitle": "¿Quién Contra Dios?",
+            "episodeNumber": 57,
+            "season": 2,
+            "description": "Jesucristo enseñó que quien no está con Él está en su contra, por lo que no existe una posición espiritual neutral. El episodio invita a demostrar nuestra fe mediante la obediencia, el arrepentimiento y una vida edificada sobre la Palabra de Dios.",
+            "slug": "57-quien-contra-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/57-Quin-Contra-Dios-e3nkpb7",
+            "duration": "00:51:23"
+          },
+          {
+            "date": "2016-01-16",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461888/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F584db762-3371-b3d8-f8ff-6f5a90fd74fc.mp3",
+            "audioTitle": "Los Ángeles de Dios",
+            "episodeNumber": 58,
+            "season": 2,
+            "description": "Una enseñanza bíblica sobre el origen, la naturaleza y el propósito de los ángeles como servidores y mensajeros de Dios. El pastor Ariel aclara que los ángeles no deben ser adorados y dirige toda la gloria y la confianza hacia Jesucristo.",
+            "slug": "58-los-angeles-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/58-Los-ngeles-de-Dios-e3nkpc0",
+            "duration": "00:55:47"
+          }
+        ]
+      },
+      "julio": {
+        "monthTitle": "Julio",
+        "audioData": [
+          {
+            "date": "2015-07-18",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461914/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F81fde8f4-0cac-baff-b96c-3242dd4ff06b.mp3",
+            "audioTitle": "Dios Es Amor",
+            "episodeNumber": 59,
+            "season": 2,
+            "description": "El amor humano puede cambiar según las emociones y las circunstancias, pero el amor de Dios permanece para siempre. Este mensaje presenta el sacrificio de Jesucristo como la mayor demostración de un amor verdadero, eterno e incondicional.",
+            "slug": "59-dios-es-amor",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/59-Dios-Es-Amor-e3nkpcq",
+            "duration": "00:54:33"
+          },
+          {
+            "date": "2015-09-19",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461947/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F60d7d3e1-5460-f678-6339-252d6cfc9ff1.mp3",
+            "audioTitle": "Con el Tiempo",
+            "episodeNumber": 60,
+            "season": 2,
+            "description": "Con el tiempo comprendemos mejor la grandeza, la gracia y la presencia constante de Dios en nuestras vidas. El episodio invita a considerar las consecuencias de nuestras decisiones, poner a Dios primero y vivir conscientes de que algún día rendiremos cuentas ante Él.",
+            "slug": "60-con-el-tiempo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/60-Con-el-Tiempo-e3nkpdr",
+            "duration": "00:54:17"
+          },
+          {
+            "date": "2015-12-19",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124461975/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F51e8c338-64db-c4d7-858d-ef5e1167a5a7.mp3",
+            "audioTitle": "El Nacimiento de Jesucristo",
+            "episodeNumber": 61,
+            "season": 2,
+            "description": "Un mensaje sobre el nacimiento de Jesucristo y el cumplimiento de las promesas anunciadas en las Escrituras. El pastor Ariel recuerda que lo más importante no es la fecha de la celebración, sino que el Hijo de Dios vino al mundo para salvar a quienes estaban perdidos.",
+            "slug": "61-el-nacimiento-de-jesucristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/61-El-Nacimiento-de-Jesucristo-e3nkpen",
+            "duration": "00:53:19"
+          }
+        ]
+      },
+      "agosto": {
+        "monthTitle": "Agosto",
+        "audioData": [
+          {
+            "date": "2016-02-20",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462077/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fdca81078-8ccf-3cee-a371-e1031ff26ec9.mp3",
+            "audioTitle": "La Cruz en el Centro",
+            "episodeNumber": 62,
+            "season": 2,
+            "description": "El pastor Ariel explica por qué la cruz debe ocupar un lugar central en el mensaje cristiano y no quedar eclipsada por otros temas. El sacrificio y la sangre de Jesucristo hicieron posible el perdón de los pecados y la reconciliación con Dios.",
+            "slug": "62-la-cruz-en-el-centro",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/62-La-Cruz-en-el-Centro-e3nkpht",
+            "duration": "00:54:13"
+          },
+          {
+            "date": "2015-11-21",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462106/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F92f88c43-9dfe-876d-ca2f-c88d534a297c.mp3",
+            "audioTitle": "Una Mujer Sorprendida en Adulterio",
+            "episodeNumber": 63,
+            "season": 2,
+            "description": "El relato de la mujer sorprendida en adulterio muestra la misericordia de Jesucristo frente al juicio y la desigualdad humana. El episodio invita a reconocer nuestros pecados, tratar a los demás con dignidad y recibir el perdón que Dios ofrece.",
+            "slug": "63-una-mujer-sorprendida-en-adulterio",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/63-Una-Mujer-Sorprendida-en-Adulterio-e3nkpiq",
+            "duration": "00:36:41"
+          },
+          {
+            "date": "2015-08-22",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462143/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F8287ea81-deba-10de-97e4-a76268e33a09.mp3",
+            "audioTitle": "La Cruz de Cristo",
+            "episodeNumber": 64,
+            "season": 2,
+            "description": "Una reflexión sobre el significado de la cruz como el lugar donde Jesucristo pagó por los pecados de la humanidad. El mensaje enseña que solamente su sangre pura puede limpiarnos y abrirnos el camino hacia la vida eterna.",
+            "slug": "64-la-cruz-de-cristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/64-La-Cruz-de-Cristo-e3nkpjv",
+            "duration": "00:54:31"
+          }
+        ]
+      },
+      "septiembre": {
+        "monthTitle": "Septiembre",
+        "audioData": [
+          {
+            "date": "2016-01-23",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462177/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F580feddd-f836-0508-a670-ba7b84b2aa9c.mp3",
+            "audioTitle": "La Identidad de Jesucristo",
+            "episodeNumber": 65,
+            "season": 2,
+            "description": "Este episodio examina quién es verdaderamente Jesucristo y por qué no puede ser considerado solamente un profeta o un buen maestro. El pastor Ariel lo presenta como el Hijo de Dios, Salvador del mundo y único camino hacia la vida eterna.",
+            "slug": "65-la-identidad-de-jesucristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/65-La-Identidad-de-Jesucristo-e3nkpl1",
+            "duration": "00:50:17"
+          },
+          {
+            "date": "2015-10-24",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462225/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F089978d0-6905-cd04-679a-4be187ff5fa2.mp3",
+            "audioTitle": "El Gran Amor de Dios",
+            "episodeNumber": 66,
+            "season": 2,
+            "description": "Una enseñanza sobre la grandeza del amor de Dios y la manera en que se manifiesta en cada aspecto de nuestra vida. El mensaje invita a responder a ese amor mediante la oración, la obediencia y una relación constante con Jesucristo.",
+            "slug": "66-el-gran-amor-de-dios",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/66-El-Gran-Amor-de-Dios-e3nkpmh",
+            "duration": "00:54:28"
+          },
+          {
+            "date": "2015-07-25",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462246/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F8d6efc28-5d12-5531-4bd8-318ab6fe473e.mp3",
+            "audioTitle": "¿Quiénes Son los Ángeles?",
+            "episodeNumber": 67,
+            "season": 2,
+            "description": "El pastor Ariel examina lo que la Biblia enseña sobre el origen, la naturaleza y las funciones de los ángeles. El episodio recuerda que fueron creados para servir a Dios y cumplir sus propósitos, pero que solamente Él merece adoración.",
+            "slug": "67-quienes-son-los-angeles",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/67-Quines-Son-los-ngeles-e3nkpn6",
+            "duration": "00:39:42"
+          }
+        ]
+      },
+      "octubre": {
+        "monthTitle": "Octubre",
+        "audioData": [
+          {
+            "date": "2015-09-26",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462309/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F40356d89-3970-7975-f934-e61c2276b79c.mp3",
+            "audioTitle": "El Rapto de la Iglesia",
+            "episodeNumber": 68,
+            "season": 2,
+            "description": "Una enseñanza sobre el rapto de la Iglesia y la promesa de que los creyentes serán reunidos con Jesucristo. El mensaje invita a conocer las profecías bíblicas, permanecer preparados y recibir a Cristo antes de los acontecimientos finales.",
+            "slug": "68-el-rapto-de-la-iglesia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/68-El-Rapto-de-la-Iglesia-e3nkpp5",
+            "duration": "00:55:35"
+          },
+          {
+            "date": "2015-12-26",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462329/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F13c8eb2c-536a-48dd-48a9-1801e713cc52.mp3",
+            "audioTitle": "La Culpa y la Cruz de Cristo",
+            "episodeNumber": 69,
+            "season": 2,
+            "description": "Este episodio examina la culpa que produce el pecado y las limitaciones de intentar resolverla únicamente mediante explicaciones humanas. El pastor Ariel enseña que el verdadero perdón y la libertad se encuentran en el sacrificio de Jesucristo.",
+            "slug": "69-la-culpa-y-la-cruz-de-cristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/69-La-Culpa-y-la-Cruz-de-Cristo-e3nkppp",
+            "duration": "00:53:29"
+          },
+          {
+            "date": "2016-02-27",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462347/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fdff95897-405e-71d6-e05d-a6f210bca0c1.mp3",
+            "audioTitle": "¿Qué Es la Fe?",
+            "episodeNumber": 70,
+            "season": 2,
+            "description": "Basado en Hebreos, este mensaje presenta la fe como la certeza de lo que se espera y la convicción de lo que no se ve. El episodio invita a confiar en las promesas de Dios y vivir con la esperanza de la venida y la salvación de Jesucristo.",
+            "slug": "70-que-es-la-fe",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/70-Qu-Es-la-Fe-e3nkpqb",
+            "duration": "00:55:43"
+          }
+        ]
+      },
+      "noviembre": {
+        "monthTitle": "Noviembre",
+        "audioData": [
+          {
+            "date": "2015-11-28",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462366/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F6cf7609f-8c0b-3db0-bd5e-952572506476.mp3",
+            "audioTitle": "Puestos los Ojos en Jesús",
+            "episodeNumber": 71,
+            "season": 2,
+            "description": "El pastor Ariel anima a mantener los ojos puestos en Jesucristo durante los problemas, las alegrías y cada circunstancia de la vida. El mensaje recuerda que Jesús pagó por nuestros pecados y permanece como la fuente de nuestra fe, dirección y esperanza.",
+            "slug": "71-puestos-los-ojos-en-jesus",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/71-Puestos-los-Ojos-en-Jess-e3nkpqu",
+            "duration": "00:50:50"
+          },
+          {
+            "date": "2015-08-29",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462511/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2F3e1e96ea-4c6f-74a7-8344-c539c78a1fbc.mp3",
+            "audioTitle": "La Segunda Venida de Jesucristo",
+            "episodeNumber": 72,
+            "season": 2,
+            "description": "Una enseñanza sobre la segunda venida de Jesucristo, las señales que la precederán y la diferencia entre su regreso y el rapto de la Iglesia. El episodio invita a conocer a Cristo, permanecer preparados y no dejarse engañar por falsos anuncios sobre su aparición.",
+            "slug": "72-la-segunda-venida-de-jesucristo",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/72-La-Segunda-Venida-de-Jesucristo-e3nkpvf",
+            "duration": "00:54:09"
+          }
+        ]
+      },
+      "diciembre": {
+        "monthTitle": "Diciembre",
+        "audioData": [
+          {
+            "date": "2016-01-30",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462533/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fd0f3a919-6555-6ac5-602c-3969d9c4e76d.mp3",
+            "audioTitle": "El Orgullo, la Arrogancia y la Soberbia",
+            "episodeNumber": 73,
+            "season": 2,
+            "description": "El pastor Ariel examina cómo el orgullo, la arrogancia y la soberbia nos apartan de Dios y dañan nuestras relaciones. El mensaje invita a vencer estas actitudes mediante la humildad, la obediencia y una vida transformada por Jesucristo.",
+            "slug": "73-el-orgullo-la-arrogancia-y-la-soberbia",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/73-El-Orgullo--la-Arrogancia-y-la-Soberbia-e3nkq05",
+            "duration": "00:53:34"
+          },
+          {
+            "date": "2015-10-31",
+            "audioFile": "https://anchor.fm/s/d20cc09c/podcast/play/124462549/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-19%2Fb3ee9f28-81a3-6c52-c439-f84db39b1db8.mp3",
+            "audioTitle": "La Carne Contra el Espíritu",
+            "episodeNumber": 74,
+            "season": 2,
+            "description": "Una reflexión sobre la lucha diaria entre los deseos de la carne y la dirección del Espíritu Santo. El episodio anima a buscar fortaleza mediante la oración, obedecer la Palabra de Dios y permitir que el Espíritu guíe nuestras decisiones.",
+            "slug": "74-la-carne-contra-el-espiritu",
+            "spotifyUrl": "https://podcasters.spotify.com/pod/show/tu-hora-divina/episodes/74-La-Carne-Contra-el-Espritu-e3nkq0l",
+            "duration": "00:50:52"
+          }
+        ]
       }
     }
   }

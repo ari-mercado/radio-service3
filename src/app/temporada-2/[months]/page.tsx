@@ -3,7 +3,7 @@ import SeasonPage from '@/components/season-page/season-page.component';
 import { getSeason, rangesOf } from '@/config/seasons';
 import { seasonGroupMetadata } from '@/utils/season-metadata';
 
-const season = getSeason(1);
+const season = getSeason(2);
 
 export function generateStaticParams() {
   return rangesOf(season).map((months) => ({ months }));

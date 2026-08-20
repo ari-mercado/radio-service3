@@ -2,37 +2,38 @@ import { Suspense } from 'react';
 import styles from './player-list.module.scss';
 import AudioPlayer from '../player/player.component';
 import Button from '../button/button.component';
-import { transformCollectionToMonth } from '@/utils/utils';
+import { SeasonConfig } from '@/config/seasons';
+import { episodesOf } from '@/data/episodes';
 import {
   durationToIso8601,
-  monthStructuredData,
+  groupStructuredData,
   serializeJsonLd,
 } from '@/utils/structured-data';
-import data from '@/data/data.json';
-import { AudioData } from '@/types/types';
 
-const getAudioData = (currentMonth) => {
-  const formattedMonth = transformCollectionToMonth[currentMonth];
-  const { audioData } = data?.fourteen?.monthsData[formattedMonth];
-  return audioData as AudioData[];
-};
-
-const PlayerList = ({ month }: { month: string }) => {
-  const audioData = getAudioData(month);
+const PlayerList = ({
+  season,
+  range,
+}: {
+  season: SeasonConfig;
+  range: string;
+}) => {
+  const audioData = episodesOf(season, range);
 
   return (
     <div className={styles.playerWrapper}>
       {/*
         Describes every episode on this page to crawlers: number, title,
-        description, air date, language and the series they belong to, plus
-        duration, audio URL and Spotify link where the catalog has them. It adds
-        no route of its own — each episode is addressed by the `Ep` param that
-        already selects it.
+        description, air date, language, and the series and season they belong
+        to, plus duration, audio URL and Spotify link where the catalog has
+        them. It adds no route of its own — each episode is addressed by the
+        `Ep` param that already selects it.
       */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: serializeJsonLd(monthStructuredData(month, audioData)),
+          __html: serializeJsonLd(
+            groupStructuredData(season, range, audioData),
+          ),
         }}
       />
 
